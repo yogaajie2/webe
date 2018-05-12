@@ -1,0 +1,10 @@
+.top-jumbotron {
+	height: 500px;
+	background: url(img/top-jumbotron/top-jumbotron-1.jpg);
+	background-size: cover;
+	background-position: bottom;
+}
+
+.top-slogan {
+	color: #fff;
+}
