@@ -8,3 +8,10 @@
 .top-slogan {
 	color: #fff;
 }
+
+.center-jumbotron {
+	height: 500px;
+	background: url(img/center-jumbotron/center-jumbotron.jpg);
+	background-size: cover;
+	background-position: top;
+}
