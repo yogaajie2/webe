@@ -16,14 +16,9 @@
   </head>
   <body>
     <div class="container">
-    	<nav class="navbar navbar-expand-md">
-    		<a class="nav-brand">Webe</a>
-    		<a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
-    		<a class="nav-link" href="#">Link 2</a>
-    		<a class="nav-link" href="#">Link 3</a>
-    		<a class="nav-link" href="#">Link 4</a>
-    		<a class="nav-link" href="#">Link 5</a>
-    	</nav>
+
+    	<?php include ('navbar.html') ?>
+    	
     </div>
 
     <div class="jumbotron jumbotron-fluid top-jumbotron">
