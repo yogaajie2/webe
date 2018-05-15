@@ -29,9 +29,9 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-4">
+			<div class="col-4 pl-0">
 				<div class="card">
-				  <img class="card-img-top" src="img/features/feature-1.jpeg" alt="Card image">
+				  <img class="card-img-top main-features" src="img/features/feature-1.jpeg" alt="Card image">
 				  <div class="card-body">
 				    <h4 class="card-title">Fitur 1</h4>
 				    <p class="card-text">Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
@@ -39,9 +39,9 @@
 				  </div>
 				</div>		
 			</div>
-			<div class="col-4">
+			<div class="col-4 ">
 				<div class="card">
-				  <img class="card-img-top" src="img/features/feature-2.jpeg" alt="Card image">
+				  <img class="card-img-top main-features" src="img/features/feature-2.jpeg" alt="Card image">
 				  <div class="card-body">
 				    <h4 class="card-title">Fitur 2</h4>
 				    <p class="card-text">Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
@@ -49,9 +49,9 @@
 				  </div>
 				</div>		
 			</div>
-			<div class="col-4">
+			<div class="col-4 pr-0">
 				<div class="card">
-				  <img class="card-img-top" src="img/features/feature-3.jpeg" alt="Card image">
+				  <img class="card-img-top main-features" src="img/features/feature-3.jpeg" alt="Card image">
 				  <div class="card-body">
 				    <h4 class="card-title">Fitur 3</h4>
 				    <p class="card-text">Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
@@ -61,21 +61,30 @@
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row mt-5">
 			<h3>Pekerjaan Kami</h3>
 		</div>
 		
-		<div class="row">
-			<div class="container h-100 d-flex align-items-center">
-				<div class="col-4 d-flex align-items-center">
-					<img class="img-fluid" src="img/icons/icon-1.png" style="width: 70px;">
-				</div>
-				<div class="col-4 d-flex align-items-center">
-					<img class="img-fluid" src="img/icons/icon-2.png" style="width: 70px;">
-				</div>
-				<div class="col-4 d-flex align-items-center">
-					<img class="img-fluid" src="img/icons/icon-3.png" style="width: 70px;">
-				</div>
+		<div class="row my-5">
+			<div class="col-4 d-flex align-items-center justify-content-center">
+				<img class="img-fluid" src="img/icons/icon-1.png" style="width: 70px;">
+			</div>
+			<div class="col-4 d-flex align-items-center justify-content-center">
+				<img class="img-fluid" src="img/icons/icon-2.png" style="width: 70px;">
+			</div>
+			<div class="col-4 d-flex align-items-center justify-content-center">
+				<img class="img-fluid" src="img/icons/icon-3.png" style="width: 70px;">
+			</div>
+		</div>
+		<div class="row my-3">
+			<div class="col-4 d-flex align-items-center justify-content-center">
+				<h4>Pekerjaan 1</h4>
+			</div>
+			<div class="col-4 d-flex align-items-center justify-content-center">
+				<h4>Pekerjaan 2</h4>
+			</div>
+			<div class="col-4 d-flex align-items-center justify-content-center">
+				<h4>Pekerjaan 3</h4>
 			</div>
 		</div>
 		
@@ -93,22 +102,22 @@
 			<h3>Proyek Terbaru</h3>
 		</div>
 		<div class="container">
-			<div class="row">
+			<div class="row mt-3">
 				<div class="col-3">
-					<img class="img-fluid" src="img/projects/projects-1.jpeg">
+					<img class="img-fluid projects" src="img/projects/projects-1.jpeg">
 				</div>
 				<div class="col-3">
-					<img class="img-fluid" src="img/projects/projects-2.jpeg">
+					<img class="img-fluid projects" src="img/projects/projects-2.jpeg">
 				</div>
 				<div class="col-3">
-					<img class="img-fluid" src="img/projects/projects-3.jpeg">
+					<img class="img-fluid projects" src="img/projects/projects-3.jpeg">
 				</div>
 				<div class="col-3">
-					<img class="img-fluid" src="img/projects/projects-4.jpeg">
+					<img class="img-fluid projects" src="img/projects/projects-4.jpeg">
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row mt-5">
 			<div class="col-6">
 				<h3>Client Kami</h3>
 				<div class="row">

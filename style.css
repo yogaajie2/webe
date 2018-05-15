@@ -9,9 +9,17 @@
 	color: #fff;
 }
 
+.main-features {
+	height: 220px; 
+}
+
 .center-jumbotron {
 	height: 500px;
 	background: url(img/center-jumbotron/center-jumbotron.jpg);
 	background-size: cover;
 	background-position: top;
+}
+
+.projects {
+	height: 170px;
 }
