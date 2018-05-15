@@ -19,38 +19,38 @@
         
     	<?php include ('navbar.html') ?>
 
-    	<h1 style="text-transform: uppercase;">Proyek</h1>
-        <div class="row">
-            <div class="col-4">
-                <img class="img-fluid" src="img/projects/projects-1.jpeg">
+    	<h1 class="mt-5" style="text-transform: uppercase;">Proyek</h1>
+        <div class="row mt-5">
+            <div class="col-4 py-5">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-1.jpeg">
             </div>
-            <div class="col-4">
-                <img class="img-fluid" src="img/projects/projects-2.jpeg">
+            <div class="col-4 py-5">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-2.jpeg">
             </div>
-            <div class="col-4">
-                <img class="img-fluid" src="img/projects/projects-3.jpeg"> 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-4">
-                <img class="img-fluid" src="img/projects/projects-4.jpeg">
-            </div>
-            <div class="col-4">
-                <img class="img-fluid" src="img/projects/projects-5.jpeg">
-            </div>
-            <div class="col-4">
-                <img class="img-fluid" src="img/projects/projects-6.jpeg">
+            <div class="col-4 py-5">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-3.jpeg"> 
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
-                <img class="img-fluid" src="img/projects/projects-7.jpeg">
+            <div class="col-4 py-5">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-4.jpeg">
             </div>
-            <div class="col-4">
-                <img class="img-fluid" src="img/projects/projects-8.jpeg">
+            <div class="col-4 py-5">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-5.jpeg">
             </div>
-            <div class="col-4">
-                <img class="img-fluid" src="img/projects/projects-9.jpg">
+            <div class="col-4 py-5">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-6.jpeg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4 py-5">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-7.jpeg">
+            </div>
+            <div class="col-4 py-5">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-8.jpeg">
+            </div>
+            <div class="col-4 py-5">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-9.jpg">
             </div>
         </div>
     </div>

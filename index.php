@@ -65,7 +65,7 @@
 			<h3>Pekerjaan Kami</h3>
 		</div>
 		
-		<div class="row my-5">
+		<div class="row mt-3 mb-5">
 			<div class="col-4 d-flex align-items-center justify-content-center">
 				<img class="img-fluid" src="img/icons/icon-1.png" style="width: 70px;">
 			</div>
@@ -76,7 +76,7 @@
 				<img class="img-fluid" src="img/icons/icon-3.png" style="width: 70px;">
 			</div>
 		</div>
-		<div class="row my-3">
+		<div class="row mb-5">
 			<div class="col-4 d-flex align-items-center justify-content-center">
 				<h4>Pekerjaan 1</h4>
 			</div>
@@ -91,9 +91,13 @@
     </div>
 
     <div class="jumbotron jumbotron-fluid center-jumbotron">
-    	<div class="container h-100 align-items-center">
-    		<h2 style="text-transform: uppercase;">Berkontribusi dalam pembangunan negeri sejak 2002</h2>
-    		<a class="btn btn-lg" href="#">Button Text</a>
+    	<div class="container d-flex h-100 align-items-center">
+    		<div class="row">
+    			<div class="col-9">
+    				<h2 style="text-transform: uppercase;">Berkontribusi dalam pembangunan negeri sejak 2002</h2>
+    				<a class="btn btn-lg" href="#">Cerita Kami</a>
+    			</div>
+    		</div>
     	</div>
     </div>
 
@@ -120,28 +124,28 @@
 		<div class="row mt-5">
 			<div class="col-6">
 				<h3>Client Kami</h3>
-				<div class="row">
+				<div class="row my-3">
 					<div class="col-4">
-						<span class="border d-inline-block">
+						<span class="border d-inline-block p-3">
 							<h3>Client 1</h3>
 						</span>
-						<span class="border d-inline-block">
+						<span class="border d-inline-block p-3">
 							<h3>Client 4</h3>
 						</span>
 					</div>
 					<div class="col-4">
-						<span class="border d-inline-block">
+						<span class="border d-inline-block p-3">
 							<h3>Client 2</h3>
 						</span>
-						<span class="border d-inline-block">
+						<span class="border d-inline-block p-3">
 							<h3>Client 5</h3>
 						</span>
 					</div>
 					<div class="col-4">
-						<span class="border d-inline-block">
+						<span class="border d-inline-block p-3">
 							<h3>Client 3</h3>
 						</span>
-						<span class="border d-inline-block">
+						<span class="border d-inline-block p-3">
 							<h3>Client 6</h3>
 						</span>
 					</div>
