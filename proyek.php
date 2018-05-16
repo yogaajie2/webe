@@ -53,6 +53,9 @@
                 <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-9.jpg">
             </div>
         </div>
+
+        <?php include ('footer.html') ?>
+        
     </div>
 
     <!-- Optional JavaScript -->
