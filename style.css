@@ -1,8 +1,17 @@
-.top-jumbotron {
-	height: 500px;
-	background: url(img/top-jumbotron/top-jumbotron-1.jpg);
-	background-size: cover;
+.carousel-slide-1 {
+	background: url(img/main-carousel/main-carousel-1.jpg);
 	background-position: bottom;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+}
+
+.carousel-slide-2 {
+	background: url(img/main-carousel/main-carousel-2.jpg);
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+}
+
+.carousel-slide-1, .carousel-slide-2 {
+	height: 500px;
+	background-size: cover;
 }
 
 .top-slogan {
@@ -10,7 +19,8 @@
 }
 
 .main-features {
-	height: 220px; 
+	width: 100%; 
+	height: 200px; 
 }
 
 .center-jumbotron {

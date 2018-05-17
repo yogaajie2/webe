@@ -22,13 +22,13 @@
     	<h1 class="mt-5" style="text-transform: uppercase;">Tentang Kami</h1>
         <div class="row mt-5">
             <div class="col-6">
-                <img class="img-fluid" src="img/contents/contents-1.jpg">
+                <img class="img-fluid" style="width: 100%; height: 320px;" src="img/contents/contents-1.jpg">
                 <h3 class="mt-3" style="text-transform: uppercase;">Visi dan Misi</h3>
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
             <div class="col-6">
-                <img class="img-fluid" src="img/contents/contents-2.jpg">
+                <img class="img-fluid" style="width: 100%; height: 320px;" src="img/contents/contents-2.jpg">
                 <h3 class="mt-3" style="text-transform: uppercase;">Yang Kami Kerjakan</h3>
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

@@ -21,51 +21,64 @@
     	
     </div>
 
-    <div class="jumbotron jumbotron-fluid top-jumbotron">
-    	<div class="container h-100 d-flex align-items-center">
-			<h1 class="display-3 mx-auto top-slogan" style="text-align: center;">MEMBANGUN MASA DEPAN</h1>
+    <div class="container-fluid px-0">
+    	<div id="main-carousel" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active carousel-slide-1">
+		    		<div class="container h-100 d-flex align-items-center">
+						<h1 class="display-3 mx-auto top-slogan" style="text-align: center;">MEMBANGUN MASA DEPAN</h1>
+					</div>
+		    	</div>
+			    <div class="carousel-item carousel-slide-2">
+		    		<div class="container h-100 d-flex align-items-center">
+						<h1 class="display-3 mx-auto top-slogan" style="text-align: center;">MENJADI YANG TERBAIK</h1>
+					</div>
+		    	</div>
+		  	</div>
+		  	<a class="carousel-control-prev" href="#main-carousel" role="button" data-slide="prev">
+		    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    	<span class="sr-only">Previous</span>
+		  	</a>
+		  	<a class="carousel-control-next" href="#main-carousel" role="button" data-slide="next">
+		    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    	<span class="sr-only">Next</span>
+		  	</a>
 		</div>
     </div>
 
+    <!-- <div class="jumbotron jumbotron-fluid top-jumbotron">
+    	<div class="container h-100 d-flex align-items-center">
+			<h1 class="display-3 mx-auto top-slogan" style="text-align: center;">MEMBANGUN MASA DEPAN</h1>
+		</div>
+    </div> -->
+
 	<div class="container">
-		<div class="row">
-			<div class="col-4 pl-0">
-				<div class="card">
-				  <img class="card-img-top main-features" src="img/features/feature-1.jpeg" alt="Card image">
-				  <div class="card-body">
-				    <h4 class="card-title">Fitur 1</h4>
-				    <p class="card-text">Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
-				    <a href="#" class="card-link">Baca Lebih</a>
-				  </div>
-				</div>		
+		<div class="row mt-5">
+			<div class="col-4">
+			  <img class="img-fluid main-features mb-3" src="img/features/feature-1.jpeg">
+			    <h4>Fitur 1</h4>
+			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
+			    <a href="#">Baca Lebih</a>	
 			</div>
-			<div class="col-4 ">
-				<div class="card">
-				  <img class="card-img-top main-features" src="img/features/feature-2.jpeg" alt="Card image">
-				  <div class="card-body">
-				    <h4 class="card-title">Fitur 2</h4>
-				    <p class="card-text">Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
-				    <a href="#" class="card-link">Baca Lebih</a>
-				  </div>
-				</div>		
+			<div class="col-4">
+			  <img class="img-fluid main-features mb-3" src="img/features/feature-2.jpeg">
+			    <h4>Fitur 2</h4>
+			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
+			    <a href="#">Baca Lebih</a>	
 			</div>
-			<div class="col-4 pr-0">
-				<div class="card">
-				  <img class="card-img-top main-features" src="img/features/feature-3.jpeg" alt="Card image">
-				  <div class="card-body">
-				    <h4 class="card-title">Fitur 3</h4>
-				    <p class="card-text">Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
-				    <a href="#" class="card-link">Baca Lebih</a>
-				  </div>
-				</div>		
+			<div class="col-4">
+			  <img class="img-fluid main-features mb-3" src="img/features/feature-3.jpeg">
+			    <h4>Fitur 3</h4>
+			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
+			    <a href="#">Baca Lebih</a>	
 			</div>
 		</div>
 
-		<div class="row mt-5">
-			<h3>Pekerjaan Kami</h3>
+		<div class="row mt-5 justify-content-center">
+			<h3 class="text-uppercase">Pekerjaan Kami</h3>
 		</div>
 		
-		<div class="row mt-3 mb-5">
+		<div class="row my-5">
 			<div class="col-4 d-flex align-items-center justify-content-center">
 				<img class="img-fluid" src="img/icons/icon-1.png" style="width: 70px;">
 			</div>
@@ -102,8 +115,8 @@
     </div>
 
     <div class="container">
-    	<div class="row">
-			<h3>Proyek Terbaru</h3>
+    	<div class="row justify-content-center">
+			<h3 class="text-uppercase">Proyek Terbaru</h3>
 		</div>
 		<div class="container">
 			<div class="row mt-3">
@@ -120,34 +133,39 @@
 					<img class="img-fluid projects" src="img/projects/projects-4.jpeg">
 				</div>
 			</div>
+			<div class="row mt-4 justify-content-center">
+				<button class="btn text-uppercase">Lihat Semua Proyek</button>
+			</div>
 		</div>
 		<div class="row mt-5">
 			<div class="col-6">
 				<h3>Client Kami</h3>
 				<div class="row my-3">
-					<div class="col-4">
-						<span class="border d-inline-block p-3">
-							<h3>Client 1</h3>
-						</span>
-						<span class="border d-inline-block p-3">
-							<h3>Client 4</h3>
-						</span>
-					</div>
-					<div class="col-4">
-						<span class="border d-inline-block p-3">
-							<h3>Client 2</h3>
-						</span>
-						<span class="border d-inline-block p-3">
-							<h3>Client 5</h3>
-						</span>
-					</div>
-					<div class="col-4">
-						<span class="border d-inline-block p-3">
-							<h3>Client 3</h3>
-						</span>
-						<span class="border d-inline-block p-3">
-							<h3>Client 6</h3>
-						</span>
+					<div class="col">
+						<table class="table-bordered text-center" style="width: 100%; height: 200px;">
+							<tr>
+								<td>
+									<h3>Client 1</h3>
+								</td>
+								<td>
+									<h3>Client 2</h3>
+								</td>
+								<td>
+									<h3>Client 3</h3>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<h3>Client 4</h3>
+								</td>
+								<td>
+									<h3>Client 5</h3>
+								</td>
+								<td>
+									<h3>Client 6</h3>
+								</td>
+							</tr>
+						</table>
 					</div>
 				</div>
 			</div>
