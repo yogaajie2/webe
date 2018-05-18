@@ -1,19 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
-    <link href="fontawesome/css/fontawesome-all.css" rel="stylesheet">
-    <!-- Main CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <?php include ('head.html'); ?>
 
-    <title>Webe Piles</title>
-  </head>
   <body>
     <div class="container">
 
@@ -53,7 +42,7 @@
     </div> -->
 
 	<div class="container">
-		<div class="row mt-5">
+		<div class="row my-5">
 			<div class="col-4">
 			  <img class="img-fluid main-features mb-3" src="img/features/feature-1.jpeg">
 			    <h4>Fitur 1</h4>
@@ -73,7 +62,9 @@
 			    <a href="#">Baca Lebih</a>	
 			</div>
 		</div>
+	</div>
 
+	<div class="container-fluid gray-background py-5">
 		<div class="row mt-5 justify-content-center">
 			<h3 class="text-uppercase">Pekerjaan Kami</h3>
 		</div>
@@ -100,26 +91,25 @@
 				<h4>Pekerjaan 3</h4>
 			</div>
 		</div>
-		
-    </div>
+	</div>
 
-    <div class="jumbotron jumbotron-fluid center-jumbotron">
+    <div class="jumbotron jumbotron-fluid center-jumbotron my-0">
     	<div class="container d-flex h-100 align-items-center">
     		<div class="row">
     			<div class="col-9">
-    				<h2 style="text-transform: uppercase;">Berkontribusi dalam pembangunan negeri sejak 2002</h2>
+    				<h1 style="text-transform: uppercase;" class="center-jumbotron-text">Berkontribusi dalam pembangunan negeri sejak 2002</h1>
     				<a class="btn btn-lg" href="#">Cerita Kami</a>
     			</div>
     		</div>
     	</div>
     </div>
 
-    <div class="container">
-    	<div class="row justify-content-center">
+    <div class="container-fluid gray-background py-5">
+    	<div class="row justify-content-center mt-5">
 			<h3 class="text-uppercase">Proyek Terbaru</h3>
 		</div>
 		<div class="container">
-			<div class="row mt-3">
+			<div class="row mt-5">
 				<div class="col-3">
 					<img class="img-fluid projects" src="img/projects/projects-1.jpeg">
 				</div>
@@ -133,13 +123,16 @@
 					<img class="img-fluid projects" src="img/projects/projects-4.jpeg">
 				</div>
 			</div>
-			<div class="row mt-4 justify-content-center">
+			<div class="row my-5 justify-content-center">
 				<button class="btn text-uppercase">Lihat Semua Proyek</button>
 			</div>
 		</div>
+	</div>
+
+	<div class="container">
 		<div class="row mt-5">
 			<div class="col-6">
-				<h3>Client Kami</h3>
+				<h3 class="text-uppercase">Client Kami</h3>
 				<div class="row my-3">
 					<div class="col">
 						<table class="table-bordered text-center" style="width: 100%; height: 200px;">
@@ -170,19 +163,18 @@
 				</div>
 			</div>
 			<div class="col-6">
-				<h3>Testimonial</h3>
+				<h3 class="text-uppercase">Testimonial</h3>
 				<blockquote class="blockquote">
 					<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>
-					<footer class="blockquote-footer">
+					<p class="blockquote-footer">
 						John Doe
-					</footer>
+					</p>
 				</blockquote>
 			</div>
 		</div>
-
-		<?php include ('footer.html') ?>
-
     </div>
+
+    <?php include ('footer.html') ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

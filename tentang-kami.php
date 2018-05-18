@@ -1,19 +1,8 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- Font Awesome CSS -->
-    <link href="fontawesome/css/fontawesome-all.css" rel="stylesheet">
-    <!-- Main CSS -->
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <?php include ('head.html'); ?>
 
-    <title>Webe Piles | Tentang Kami</title>
-  </head>
   <body>
     <div class="container">
 
@@ -55,10 +44,9 @@
                 <p>Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
             </div>
         </div>
-
-        <?php include ('footer.html') ?>
-        
     </div>
+
+    <?php include ('footer.html') ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

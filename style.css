@@ -1,3 +1,21 @@
+h1, h2, h3 {
+	font-family: 'Oswald', sans-serif;
+}
+
+h4, p, a {
+	font-family: 'Raleway', sans-serif;
+}
+
+a {
+	font-weight: bold;
+	color: #ff9933;
+}
+
+a:hover {
+	color: #ffcc33;
+	text-transform: none;
+}
+
 .carousel-slide-1 {
 	background: url(img/main-carousel/main-carousel-1.jpg);
 	background-position: bottom;
@@ -23,6 +41,10 @@
 	height: 200px; 
 }
 
+.gray-background {
+	background-color: #e9e7e5;
+}
+
 .center-jumbotron {
 	height: 500px;
 	background: url(img/center-jumbotron/center-jumbotron.jpg);
@@ -30,6 +52,21 @@
 	background-position: top;
 }
 
+.center-jumbotron-text {
+	color: #fff;
+}
+
 .projects {
 	height: 170px;
 }
+
+
+
+footer {
+	background-color: #2b2b2b;
+}
+
+footer p {
+	color: #fff;
+}
+
