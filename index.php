@@ -4,11 +4,13 @@
   <?php include ('head.html'); ?>
 
   <body>
-    <div class="container">
+  	<div class="container-fluid fixed-top menu">
+  		<div class="container">
 
-    	<?php include ('navbar.html') ?>
+    		<?php include ('navbar.html') ?>
     	
-    </div>
+    	</div>
+  	</div>
 
     <div class="container-fluid px-0">
     	<div id="main-carousel" class="carousel slide" data-ride="carousel">
@@ -43,19 +45,19 @@
 
 	<div class="container">
 		<div class="row my-5">
-			<div class="col-4">
+			<div class="col-md-4">
 			  <img class="img-fluid main-features mb-3" src="img/features/feature-1.jpeg">
 			    <h4>Fitur 1</h4>
 			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
 			    <a href="#">Baca Lebih</a>	
 			</div>
-			<div class="col-4">
+			<div class="col-md-4">
 			  <img class="img-fluid main-features mb-3" src="img/features/feature-2.jpeg">
 			    <h4>Fitur 2</h4>
 			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
 			    <a href="#">Baca Lebih</a>	
 			</div>
-			<div class="col-4">
+			<div class="col-md-4">
 			  <img class="img-fluid main-features mb-3" src="img/features/feature-3.jpeg">
 			    <h4>Fitur 3</h4>
 			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
@@ -98,7 +100,8 @@
     		<div class="row">
     			<div class="col-9">
     				<h1 style="text-transform: uppercase;" class="center-jumbotron-text">Berkontribusi dalam pembangunan negeri sejak 2002</h1>
-    				<a class="btn btn-lg" href="#">Cerita Kami</a>
+    				<br>
+    				<a class="btn btn-lg jumbotron-button" href="#">Cerita Kami</a>
     			</div>
     		</div>
     	</div>
@@ -110,28 +113,28 @@
 		</div>
 		<div class="container">
 			<div class="row mt-5">
-				<div class="col-3">
+				<div class="col-md-3">
 					<img class="img-fluid projects" src="img/projects/projects-1.jpeg">
 				</div>
-				<div class="col-3">
+				<div class="col-md-3">
 					<img class="img-fluid projects" src="img/projects/projects-2.jpeg">
 				</div>
-				<div class="col-3">
+				<div class="col-md-3">
 					<img class="img-fluid projects" src="img/projects/projects-3.jpeg">
 				</div>
-				<div class="col-3">
+				<div class="col-md-3">
 					<img class="img-fluid projects" src="img/projects/projects-4.jpeg">
 				</div>
 			</div>
 			<div class="row my-5 justify-content-center">
-				<button class="btn text-uppercase">Lihat Semua Proyek</button>
+				<a class="btn btn-lg jumbotron-button" href="proyek.php">Lihat Semua Proyek</a>
 			</div>
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="row mt-5">
-			<div class="col-6">
+			<div class="col-md-6">
 				<h3 class="text-uppercase">Client Kami</h3>
 				<div class="row my-3">
 					<div class="col">
@@ -162,7 +165,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-md-6">
 				<h3 class="text-uppercase">Testimonial</h3>
 				<blockquote class="blockquote">
 					<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>

@@ -10,7 +10,7 @@
         
         <h1 style="text-transform: uppercase;">Kontak</h1>
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-6">
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <form>
                     <div class="form-group">
@@ -34,15 +34,15 @@
                     </div>
                 </form>
             </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <address>
                             <strong>PT. Webe Piles</strong><br>
                             Jl. Ki Hajar Dewantara Ruko Golden 8 Blok I No.8 <br>Summarecon Gading Serpong, Pakulonan Bar., Klp. Dua <br> Tangerang, Banten 15810
                         </address>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <p>
                             Telepon: (021) 29238895<br>
                             Email: webe_piles@yahoo.com

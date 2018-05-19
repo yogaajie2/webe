@@ -13,7 +13,11 @@ a {
 
 a:hover {
 	color: #ffcc33;
-	text-transform: none;
+	text-decoration: none;
+}
+
+.menu {
+	background-color: #fff;
 }
 
 .carousel-slide-1 {
@@ -54,6 +58,18 @@ a:hover {
 
 .center-jumbotron-text {
 	color: #fff;
+}
+
+.jumbotron-button {
+	font-weight: bold;
+	color: #fff;
+	background-color: #ff9933;
+	padding: 10px;
+}
+
+.jumbotron-button:hover {
+	color: #ff9933;
+	background-color: #fff;
 }
 
 .projects {
