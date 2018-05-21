@@ -4,10 +4,15 @@
   <?php include ('head.html'); ?>
 
   <body>
-    <div class="container">
-        
-    	<?php include ('navbar.html') ?>
+    <div class="container-fluid sticky-top menu">
+        <div class="container">
 
+            <?php include ('navbar.html') ?>
+        
+        </div>
+    </div>
+
+    <div class="container">
     	<h1 class="mt-5" style="text-transform: uppercase;">Proyek</h1>
         <div class="row mt-5">
             <div class="col-md-4 py-5">

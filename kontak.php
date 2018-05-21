@@ -4,11 +4,16 @@
   <?php include ('head.html'); ?>
 
   <body>
-    <div class="container">
+    <div class="container-fluid sticky-top menu">
+        <div class="container">
 
-        <?php include ('navbar.html') ?>
+            <?php include ('navbar.html') ?>
         
-        <h1 style="text-transform: uppercase;">Kontak</h1>
+        </div>
+    </div>
+        
+    <div class="container">
+        <h1 class="mt-5" style="text-transform: uppercase;">Kontak</h1>
         <div class="row">
             <div class="col-md-6">
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
