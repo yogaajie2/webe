@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+  <?php include ('fungsi/koneksi.php'); ?>
   <?php include ('head.html'); ?>
 
   <body>

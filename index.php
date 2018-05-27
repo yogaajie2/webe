@@ -1,7 +1,10 @@
 <!doctype html>
 <html lang="en">
 
-  <?php include ('head.html'); ?>
+  <?php
+  	include ('fungsi/koneksi.php');
+  	include ('head.html');
+  ?>
 
   <body>
   	<div class="container-fluid fixed-top menu">
@@ -45,12 +48,23 @@
 
 	<div class="container">
 		<div class="row my-5">
+
+			<?php
+				$fitur = "SELECT * FROM fitur";
+				$hasil_fitur = mysqli_query($koneksi, $fitur);
+
+				while ($row_fitur = mysqli_fetch_array($hasil_fitur, MYSQLI_ASSOC)) {
+			?>
+
 			<div class="col-md-4">
-			  <img class="img-fluid main-features mb-3" src="img/features/feature-1.jpeg">
-			    <h4>Fitur 1</h4>
-			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
-			    <a href="#">Baca Lebih</a>	
+			  <img class="img-fluid main-features mb-3" src="<?php echo $row_fitur['gambar_fitur']; ?>">
+			    <h4><?php echo $row_fitur['nama_fitur']; ?></h4>
+			    <p><?php echo $row_fitur['deskripsi_fitur']; ?></p>
+			    <a href="#">Baca Lebih</a>
 			</div>
+
+			<?php } ?>
+			<!--
 			<div class="col-md-4">
 			  <img class="img-fluid main-features mb-3" src="img/features/feature-2.jpeg">
 			    <h4>Fitur 2</h4>
@@ -63,6 +77,7 @@
 			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
 			    <a href="#">Baca Lebih</a>	
 			</div>
+			-->
 		</div>
 	</div>
 
@@ -83,15 +98,28 @@
 			</div>
 		</div>
 		<div class="row mb-5">
+
+			<?php
+				$pekerjaan = "SELECT * FROM pekerjaan";
+				$hasil_pekerjaan = mysqli_query($koneksi, $pekerjaan);
+
+				while ($row_pekerjaan = mysqli_fetch_array($hasil_pekerjaan, MYSQLI_ASSOC)) {
+			?>
+
 			<div class="col-4 d-flex align-items-center justify-content-center">
-				<h4>Pekerjaan 1</h4>
+				<h4><?php echo $row_pekerjaan['nama_pekerjaan']; ?></h4>
 			</div>
+			<!--
 			<div class="col-4 d-flex align-items-center justify-content-center">
 				<h4>Pekerjaan 2</h4>
 			</div>
 			<div class="col-4 d-flex align-items-center justify-content-center">
 				<h4>Pekerjaan 3</h4>
 			</div>
+			-->
+
+			<?php } ?>
+
 		</div>
 	</div>
 
@@ -140,9 +168,29 @@
 					<div class="col">
 						<table class="table-bordered text-center" style="width: 100%; height: 200px;">
 							<tr>
+
+								<?php
+									$client = "SELECT * FROM client";
+									$hasil_client = mysqli_query($koneksi, $client);
+
+									$i = 0;
+
+									while ($row_client = mysqli_fetch_array($hasil_client, MYSQLI_ASSOC)) {
+								?>
+
 								<td>
-									<h3>Client 1</h3>
+									<h3><?php echo $row_client['nama_client']; ?></h3>
 								</td>
+
+								<?php 
+						          $i++;
+						          if ($i % 3 == 0) {
+						            echo '</tr><tr>';
+						          }
+						        ?>
+
+						    	<?php } ?>
+								<!--
 								<td>
 									<h3>Client 2</h3>
 								</td>
@@ -161,18 +209,28 @@
 									<h3>Client 6</h3>
 								</td>
 							</tr>
+							-->
 						</table>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-6">
 				<h3 class="text-uppercase">Testimonial</h3>
+
+				<?php
+					$testimonial = "SELECT * FROM testimonial";
+					$hasil_testimonial = mysqli_query($koneksi, $testimonial);
+
+					while ($row_testimonial = mysqli_fetch_array($hasil_testimonial, MYSQLI_ASSOC)) {
+				?>
+
 				<blockquote class="blockquote">
-					<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>
-					<p class="blockquote-footer">
-						John Doe
-					</p>
+					<p><?php echo $row_testimonial['isi_testimonial']; ?></p>
+					<p class="blockquote-footer"><?php echo $row_testimonial['sumber_testimonial']; ?></p>
 				</blockquote>
+
+				<?php } ?>
+
 			</div>
 		</div>
     </div>

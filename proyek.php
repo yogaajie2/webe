@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+  <?php include ('fungsi/koneksi.php'); ?>
   <?php include ('head.html'); ?>
 
   <body>
@@ -14,17 +15,43 @@
 
     <div class="container">
     	<h1 class="mt-5" style="text-transform: uppercase;">Proyek</h1>
-        <div class="row mt-5">
+        <div class="row my-5">
+
+            <?php
+                $proyek = "SELECT * FROM proyek";
+                $hasil_proyek = mysqli_query($koneksi, $proyek);
+
+                $i = 0;
+
+                while ($row_proyek = mysqli_fetch_array($hasil_proyek, MYSQLI_ASSOC)) {
+            ?>
+
             <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-1.jpeg">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="<?php echo $row_proyek['gambar_proyek']; ?>">
             </div>
+
+
+            <?php 
+              $i++;
+              if ($i % 3 == 0) {
+                echo '</div><div class="row my-5">';
+              }
+            ?>
+
+            <?php } ?>
+
+            <!--
             <div class="col-md-4 py-5">
                 <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-2.jpeg">
             </div>
             <div class="col-md-4 py-5">
                 <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-3.jpeg"> 
             </div>
+            -->
+
         </div>
+
+        <!--
         <div class="row">
             <div class="col-md-4 py-5">
                 <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-4.jpeg">
@@ -47,6 +74,8 @@
                 <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-9.jpg">
             </div>
         </div>
+        -->
+
     </div>
 
     <?php include ('footer.html') ?>

@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 
+  <?php include ('fungsi/koneksi.php'); ?>
   <?php include ('head.html'); ?>
 
   <body>
@@ -41,18 +42,29 @@
             </div>
             <div class="col-md-6">
                 <div class="row">
+
+                <?php
+                    $kontak = "SELECT * FROM kontak";
+                    $hasil_kontak = mysqli_query($koneksi, $kontak);
+
+                    $i = 0;
+
+                    while ($row_kontak = mysqli_fetch_array($hasil_kontak, MYSQLI_ASSOC)) {
+                ?>
+
                     <div class="col-md-6">
                         <address>
                             <strong>PT. Webe Piles</strong><br>
-                            Jl. Ki Hajar Dewantara Ruko Golden 8 Blok I No.8 <br>Summarecon Gading Serpong, Pakulonan Bar., Klp. Dua <br> Tangerang, Banten 15810
+                            <?php echo $row_kontak['alamat']; ?>
                         </address>
                     </div>
                     <div class="col-md-6">
-                        <p>
-                            Telepon: (021) 29238895<br>
-                            Email: webe_piles@yahoo.com
-                        </p>
+                        <p>Telepon: <?php echo $row_kontak['telepon']; ?></p>
+                        <p>Email: <?php echo $row_kontak['email']; ?></p>
                     </div>
+
+                <?php } ?>
+
                 </div>
                 <div class="row">
                     <img class="img-fluid" src="img/contents/map.png">
