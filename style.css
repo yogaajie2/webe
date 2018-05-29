@@ -16,6 +16,14 @@ a:hover {
 	text-decoration: none;
 }
 
+.landing-page {
+	background: url(img/index.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+}
+
 .menu {
 	background-color: #fff;
 }
@@ -36,7 +44,7 @@ a:hover {
 	background-size: cover;
 }
 
-.top-slogan {
+.top-slogan, .welcome-text {
 	color: #fff;
 }
 

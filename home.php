@@ -7,7 +7,7 @@
   ?>
 
   <body>
-  	<div class="container-fluid fixed-top menu">
+  	<div class="container-fluid sticky-top menu">
   		<div class="container">
 
     		<?php include ('navbar.html') ?>
@@ -20,12 +20,12 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active carousel-slide-1">
 		    		<div class="container h-100 d-flex align-items-center">
-						<h1 class="display-3 mx-auto top-slogan" style="text-align: center;">MEMBANGUN MASA DEPAN</h1>
+						<h1 class="display-3 text-uppercase mx-auto top-slogan" style="text-align: center;">Building the Future</h1>
 					</div>
 		    	</div>
 			    <div class="carousel-item carousel-slide-2">
 		    		<div class="container h-100 d-flex align-items-center">
-						<h1 class="display-3 mx-auto top-slogan" style="text-align: center;">MENJADI YANG TERBAIK</h1>
+						<h1 class="display-3 text-uppercase mx-auto top-slogan" style="text-align: center;">Become the Best</h1>
 					</div>
 		    	</div>
 		  	</div>
@@ -60,7 +60,7 @@
 			  <img class="img-fluid main-features mb-3" src="<?php echo $row_fitur['gambar_fitur']; ?>">
 			    <h4><?php echo $row_fitur['nama_fitur']; ?></h4>
 			    <p><?php echo $row_fitur['deskripsi_fitur']; ?></p>
-			    <a href="#">Baca Lebih</a>
+			    <a href="#">Read More</a>
 			</div>
 
 			<?php } ?>
@@ -83,7 +83,7 @@
 
 	<div class="container-fluid gray-background py-5">
 		<div class="row mt-5 justify-content-center">
-			<h3 class="text-uppercase">Pekerjaan Kami</h3>
+			<h3 class="text-uppercase">Our Works</h3>
 		</div>
 		
 		<div class="row my-5">
@@ -127,9 +127,9 @@
     	<div class="container d-flex h-100 align-items-center">
     		<div class="row">
     			<div class="col-9">
-    				<h1 style="text-transform: uppercase;" class="center-jumbotron-text">Berkontribusi dalam pembangunan negeri sejak 2002</h1>
+    				<h1 style="text-transform: uppercase;" class="center-jumbotron-text">Contributed to the nation's development since 2002</h1>
     				<br>
-    				<a class="btn btn-lg jumbotron-button" href="#">Cerita Kami</a>
+    				<a class="btn btn-lg jumbotron-button" href="#">Our Story</a>
     			</div>
     		</div>
     	</div>
@@ -137,7 +137,7 @@
 
     <div class="container-fluid gray-background py-5">
     	<div class="row justify-content-center mt-5">
-			<h3 class="text-uppercase">Proyek Terbaru</h3>
+			<h3 class="text-uppercase">Latest Projects</h3>
 		</div>
 		<div class="container">
 			<div class="row mt-5">
@@ -155,7 +155,7 @@
 				</div>
 			</div>
 			<div class="row my-5 justify-content-center">
-				<a class="btn btn-lg jumbotron-button" href="proyek.php">Lihat Semua Proyek</a>
+				<a class="btn btn-lg jumbotron-button" href="proyek.php">See All Projects</a>
 			</div>
 		</div>
 	</div>
@@ -163,7 +163,7 @@
 	<div class="container">
 		<div class="row mt-5">
 			<div class="col-md-6">
-				<h3 class="text-uppercase">Client Kami</h3>
+				<h3 class="text-uppercase">Our Clients</h3>
 				<div class="row my-3">
 					<div class="col">
 						<table class="table-bordered text-center" style="width: 100%; height: 200px;">
@@ -215,7 +215,7 @@
 				</div>
 			</div>
 			<div class="col-md-6">
-				<h3 class="text-uppercase">Testimonial</h3>
+				<h3 class="text-uppercase">Testimonials</h3>
 
 				<?php
 					$testimonial = "SELECT * FROM testimonial";

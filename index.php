@@ -5,16 +5,38 @@
   <?php include ('head.html'); ?>
 
   <body class="h-100">
-    <div class="container h-100 d-flex align-items-center justify-content-center">
-        <div class="row">
-            <div class="col-md-4">
-                <h1>Inggris</h1>
+    <div class="container-fluid h-100 landing-page">
+        <div class="container h-25 d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-1 text-uppercase welcome-text" style="letter-spacing: 5px;">Welcome</h1>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h1>Cina</h1>
+        </div>
+        <div class="container h-25 d-flex align-items-center justify-content-center">   
+            <div class="row">
+                <div class="col-4">
+                    <a href="home.php">
+                        <span class="display-1 flag-icon flag-icon-us"></span>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="id/home.php">
+                        <span class="display-1 flag-icon flag-icon-id"></span>
+                    </a>
+                </div>
+                <div class="col-4">
+                    <a href="cn/home.php">
+                        <span class="display-1 flag-icon flag-icon-cn"></span>
+                    </a>
+                </div>
             </div>
-            <div class="col-md-4">
-                <h1>Indonesia</h1>
+        </div>
+        <div class="container h-25 d-flex align-items-center justify-content-center">   
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-uppercase welcome-text">please choose your Language</h1>
+                </div>
             </div>
         </div>
     </div>
