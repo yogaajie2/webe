@@ -25,7 +25,7 @@
         <div class="row my-5">
 
             <?php
-                $layanan = "SELECT * FROM layanan";
+                $layanan = "SELECT * FROM layanan WHERE bahasa_layanan = 'en'";
                 $hasil_layanan = mysqli_query($koneksi, $layanan);
 
                 $i = 0;

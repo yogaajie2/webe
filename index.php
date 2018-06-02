@@ -35,7 +35,7 @@
         <div class="container h-25 d-flex align-items-center justify-content-center">   
             <div class="row">
                 <div class="col">
-                    <h1 class="text-uppercase welcome-text">please choose your Language</h1>
+                    <h1 class="welcome-text">Please choose your language.</h1>
                 </div>
             </div>
         </div>

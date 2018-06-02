@@ -7,7 +7,7 @@
   ?>
 
   <body>
-  	<div class="container-fluid fixed-top menu">
+  	<div class="container-fluid sticky-top menu">
   		<div class="container">
 
     		<?php include ('navbar.html') ?>
@@ -20,12 +20,12 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active carousel-slide-1">
 		    		<div class="container h-100 d-flex align-items-center">
-						<h1 class="display-3 mx-auto top-slogan" style="text-align: center;">MEMBANGUN MASA DEPAN</h1>
+						<h1 class="display-3 text-uppercase mx-auto top-slogan" style="text-align: center;">MEMBANGUN MASA DEPAN</h1>
 					</div>
 		    	</div>
 			    <div class="carousel-item carousel-slide-2">
 		    		<div class="container h-100 d-flex align-items-center">
-						<h1 class="display-3 mx-auto top-slogan" style="text-align: center;">MENJADI YANG TERBAIK</h1>
+						<h1 class="display-3 text-uppercase mx-auto top-slogan" style="text-align: center;">MENJADI YANG TERBAIK</h1>
 					</div>
 		    	</div>
 		  	</div>
@@ -50,7 +50,7 @@
 		<div class="row my-5">
 
 			<?php
-				$fitur = "SELECT * FROM fitur";
+				$fitur = "SELECT * FROM fitur WHERE bahasa_fitur = 'cn'";
 				$hasil_fitur = mysqli_query($koneksi, $fitur);
 
 				while ($row_fitur = mysqli_fetch_array($hasil_fitur, MYSQLI_ASSOC)) {
@@ -100,7 +100,7 @@
 		<div class="row mb-5">
 
 			<?php
-				$pekerjaan = "SELECT * FROM pekerjaan";
+				$pekerjaan = "SELECT * FROM pekerjaan WHERE bahasa_pekerjaan = 'cn'";
 				$hasil_pekerjaan = mysqli_query($koneksi, $pekerjaan);
 
 				while ($row_pekerjaan = mysqli_fetch_array($hasil_pekerjaan, MYSQLI_ASSOC)) {
@@ -141,9 +141,21 @@
 		</div>
 		<div class="container">
 			<div class="row mt-5">
+				
+				<?php
+	                $proyek = "SELECT * FROM proyek LIMIT 4";
+	                $hasil_proyek = mysqli_query($koneksi, $proyek);
+
+	                while ($row_proyek = mysqli_fetch_array($hasil_proyek, MYSQLI_ASSOC)) {
+	            ?>
+
 				<div class="col-md-3">
-					<img class="img-fluid projects" src="img/projects/projects-1.jpeg">
+					<img class="img-fluid projects" src="<?php echo $row_proyek['gambar_proyek']; ?>">
 				</div>
+
+				<?php } ?>
+
+			<!--
 				<div class="col-md-3">
 					<img class="img-fluid projects" src="img/projects/projects-2.jpeg">
 				</div>
@@ -153,6 +165,7 @@
 				<div class="col-md-3">
 					<img class="img-fluid projects" src="img/projects/projects-4.jpeg">
 				</div>
+			-->
 			</div>
 			<div class="row my-5 justify-content-center">
 				<a class="btn btn-lg jumbotron-button" href="proyek.php">Lihat Semua Proyek</a>
@@ -218,7 +231,7 @@
 				<h3 class="text-uppercase">Testimonial</h3>
 
 				<?php
-					$testimonial = "SELECT * FROM testimonial";
+					$testimonial = "SELECT * FROM testimonial WHERE bahasa_testimonial = 'cn'";
 					$hasil_testimonial = mysqli_query($koneksi, $testimonial);
 
 					while ($row_testimonial = mysqli_fetch_array($hasil_testimonial, MYSQLI_ASSOC)) {
