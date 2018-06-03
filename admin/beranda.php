@@ -53,10 +53,10 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Nama Fitur</th>
-                    <th>Deskripsi Fitur</th>
-                    <th>Gambar Fitur</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama Fitur</th>
+                    <th class="align-middle">Deskripsi Fitur</th>
+                    <th class="align-middle">Gambar Fitur</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -65,11 +65,11 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_fitur_en['nama_fitur']; ?></td>
-                    <td><?php echo $row_fitur_en['deskripsi_fitur']; ?></td>
-                    <td><?php echo $row_fitur_en['gambar_fitur']; ?></td>
-                    <td>
-                      <a href="#" class="btn btn-link">Ubah</a>
+                    <td class="align-middle"><?php echo $row_fitur_en['nama_fitur']; ?></td>
+                    <td class="align-middle"><?php echo $row_fitur_en['deskripsi_fitur']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_fitur_en['gambar_fitur']; ?>"></td>
+                    <td class="align-middle">
+                      <a href="ubah/ubah-fitur.php?id=<?php echo $row_fitur_en['id_fitur']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -94,10 +94,10 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Nama Fitur</th>
-                    <th>Deskripsi Fitur</th>
-                    <th>Gambar Fitur</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama Fitur</th>
+                    <th class="align-middle">Deskripsi Fitur</th>
+                    <th class="align-middle">Gambar Fitur</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -106,11 +106,11 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_fitur_id['nama_fitur']; ?></td>
-                    <td><?php echo $row_fitur_id['deskripsi_fitur']; ?></td>
-                    <td><?php echo $row_fitur_id['gambar_fitur']; ?></td>
-                    <td>
-                      <a href="#" class="btn btn-link">Ubah</a>
+                    <td class="align-middle"><?php echo $row_fitur_id['nama_fitur']; ?></td>
+                    <td class="align-middle"><?php echo $row_fitur_id['deskripsi_fitur']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_fitur_id['gambar_fitur']; ?>"></td>
+                    <td class="align-middle">
+                      <a href="ubah/ubah-fitur.php?id=<?php echo $row_fitur_id['id_fitur']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -135,10 +135,10 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Nama Fitur</th>
-                    <th>Deskripsi Fitur</th>
-                    <th>Gambar Fitur</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama Fitur</th>
+                    <th class="align-middle">Deskripsi Fitur</th>
+                    <th class="align-middle">Gambar Fitur</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -147,11 +147,11 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_fitur_cn['nama_fitur']; ?></td>
-                    <td><?php echo $row_fitur_cn['deskripsi_fitur']; ?></td>
-                    <td><?php echo $row_fitur_cn['gambar_fitur']; ?></td>
-                    <td>
-                      <a href="#" class="btn btn-link">Ubah</a>
+                    <td class="align-middle"><?php echo $row_fitur_cn['nama_fitur']; ?></td>
+                    <td class="align-middle"><?php echo $row_fitur_cn['deskripsi_fitur']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_fitur_cn['gambar_fitur']; ?>"></td>
+                    <td class="align-middle">
+                      <a href="ubah/ubah-fitur.php?id=<?php echo $row_fitur_cn['id_fitur']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -200,7 +200,7 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Nama pekerjaan</th>
+                    <th class="align-middle">Nama pekerjaan</th>
                     <th class="text-right">Opsi</th>
                   </tr>
                 </thead>
@@ -210,9 +210,9 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_pekerjaan_en['nama_pekerjaan']; ?></td>
+                    <td class="align-middle"><?php echo $row_pekerjaan_en['nama_pekerjaan']; ?></td>
                     <td class="text-right">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-pekerjaan.php?id=<?php echo $row_pekerjaan_en['id_pekerjaan']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -237,7 +237,7 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Nama pekerjaan</th>
+                    <th class="align-middle">Nama pekerjaan</th>
                     <th class="text-right">Opsi</th>
                   </tr>
                 </thead>
@@ -247,9 +247,9 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_pekerjaan_id['nama_pekerjaan']; ?></td>
+                    <td class="align-middle"><?php echo $row_pekerjaan_id['nama_pekerjaan']; ?></td>
                     <td class="text-right">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-pekerjaan.php?id=<?php echo $row_pekerjaan_id['id_pekerjaan']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -274,7 +274,7 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Nama pekerjaan</th>
+                    <th class="align-middle">Nama pekerjaan</th>
                     <th class="text-right">Opsi</th>
                   </tr>
                 </thead>
@@ -284,9 +284,9 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_pekerjaan_cn['nama_pekerjaan']; ?></td>
+                    <td class="align-middle"><?php echo $row_pekerjaan_cn['nama_pekerjaan']; ?></td>
                     <td class="text-right">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-pekerjaan.php?id=<?php echo $row_pekerjaan_cn['id_pekerjaan']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -319,7 +319,7 @@
           <table class="table table-hover text-left">
             <thead>
               <tr>
-                <th>Nama client</th>
+                <th class="align-middle">Nama client</th>
                 <th class="text-right">Opsi</th>
               </tr>
             </thead>
@@ -330,9 +330,9 @@
               ?>
 
               <tr>
-                <td><?php echo $row_client['nama_client']; ?></td>
+                <td class="align-middle"><?php echo $row_client['nama_client']; ?></td>
                 <td class="text-right">
-                  <a href="#" class="btn btn-link">Ubah</a>
+                  <a href="ubah/ubah-client.php?id=<?php echo $row_client['id_client']; ?>" class="btn btn-link">Ubah</a>
                   <a href="#" class="btn btn-link">Hapus</a>
                 </td>
               </tr>
@@ -381,9 +381,9 @@
               <table class="table table-hover text-left">
                 <thead>
                   <tr>
-                    <th>Isi Testimonial</th>
-                    <th>Sumber Testimonial</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Isi Testimonial</th>
+                    <th class="align-middle">Sumber Testimonial</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -392,10 +392,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_testimonial_en['isi_testimonial']; ?></td>
-                    <td><?php echo $row_testimonial_en['sumber_testimonial']; ?></td>
-                    <td>
-                      <a href="#" class="btn btn-link">Ubah</a>
+                    <td class="align-middle"><?php echo $row_testimonial_en['isi_testimonial']; ?></td>
+                    <td class="align-middle"><?php echo $row_testimonial_en['sumber_testimonial']; ?></td>
+                    <td class="align-middle">
+                      <a href="ubah/ubah-testimonial.php?id=<?php echo $row_testimonial_en['id_testimonial']; ?>" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
@@ -421,9 +421,9 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Isi Testimonial</th>
-                    <th>Sumber Testimonial</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Isi Testimonial</th>
+                    <th class="align-middle">Sumber Testimonial</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -432,10 +432,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_testimonial_id['isi_testimonial']; ?></td>
-                    <td><?php echo $row_testimonial_id['sumber_testimonial']; ?></td>
-                    <td>
-                      <a href="#" class="btn btn-link">Ubah</a>
+                    <td class="align-middle"><?php echo $row_testimonial_id['isi_testimonial']; ?></td>
+                    <td class="align-middle"><?php echo $row_testimonial_id['sumber_testimonial']; ?></td>
+                    <td class="align-middle">
+                      <a href="ubah/ubah-testimonial.php?id=<?php echo $row_testimonial_id['id_testimonial']; ?>" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
@@ -461,9 +461,9 @@
               <table class="table table-hover">
                 <thead>
                   <tr>
-                    <th>Isi Testimonial</th>
-                    <th>Sumber Testimonial</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Isi Testimonial</th>
+                    <th class="align-middle">Sumber Testimonial</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -472,10 +472,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_testimonial_cn['isi_testimonial']; ?></td>
-                    <td><?php echo $row_testimonial_cn['sumber_testimonial']; ?></td>
-                    <td>
-                      <a href="#" class="btn btn-link">Ubah</a>
+                    <td class="align-middle"><?php echo $row_testimonial_cn['isi_testimonial']; ?></td>
+                    <td class="align-middle"><?php echo $row_testimonial_cn['sumber_testimonial']; ?></td>
+                    <td class="align-middle">
+                      <a href="ubah/ubah-testimonial.php?id=<?php echo $row_testimonial_cn['id_testimonial']; ?>" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>

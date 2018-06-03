@@ -53,10 +53,10 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Judul</th>
-                    <th>Isi</th>
-                    <th>Gambar</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Judul</th>
+                    <th class="align-middle">Isi</th>
+                    <th class="align-middle">Gambar</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -65,10 +65,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_tentang_kami_en['judul_tentang_kami']; ?></td>
-                    <td><?php echo $row_tentang_kami_en['isi_tentang_kami']; ?></td>
-                    <td><?php echo $row_tentang_kami_en['gambar_tentang_kami']; ?></td>
-                    <td>
+                    <td class="align-middle"><?php echo $row_tentang_kami_en['judul_tentang_kami']; ?></td>
+                    <td class="align-middle"><?php echo $row_tentang_kami_en['isi_tentang_kami']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_tentang_kami_en['gambar_tentang_kami']; ?>"></td>
+                    <td class="align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
@@ -94,10 +94,10 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Judul</th>
-                    <th>Isi</th>
-                    <th>Gambar</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Judul</th>
+                    <th class="align-middle">Isi</th>
+                    <th class="align-middle">Gambar</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -106,10 +106,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_tentang_kami_id['judul_tentang_kami']; ?></td>
-                    <td><?php echo $row_tentang_kami_id['isi_tentang_kami']; ?></td>
-                    <td><?php echo $row_tentang_kami_id['gambar_tentang_kami']; ?></td>
-                    <td>
+                    <td class="align-middle"><?php echo $row_tentang_kami_id['judul_tentang_kami']; ?></td>
+                    <td class="align-middle"><?php echo $row_tentang_kami_id['isi_tentang_kami']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_tentang_kami_id['gambar_tentang_kami']; ?>"></td>
+                    <td class="align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
@@ -135,10 +135,10 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Judul</th>
-                    <th>Isi</th>
-                    <th>Gambar</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Judul</th>
+                    <th class="align-middle">Isi</th>
+                    <th class="align-middle">Gambar</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -147,10 +147,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_tentang_kami_cn['judul_tentang_kami']; ?></td>
-                    <td><?php echo $row_tentang_kami_cn['isi_tentang_kami']; ?></td>
-                    <td><?php echo $row_tentang_kami_cn['gambar_tentang_kami']; ?></td>
-                    <td>
+                    <td class="align-middle"><?php echo $row_tentang_kami_cn['judul_tentang_kami']; ?></td>
+                    <td class="align-middle"><?php echo $row_tentang_kami_cn['isi_tentang_kami']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_tentang_kami_cn['gambar_tentang_kami']; ?>"></td>
+                    <td class="align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
@@ -200,11 +200,11 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Nama</th>
-                    <th>Jabatan</th>
-                    <th>Tentang</th>
-                    <th>Gambar</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama</th>
+                    <th class="align-middle">Jabatan</th>
+                    <th class="align-middle">Tentang</th>
+                    <th class="align-middle">Gambar</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -214,11 +214,11 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_jajaran_direksi_en['nama_jajaran_direksi']; ?></td>
-                    <td><?php echo $row_jajaran_direksi_en['jabatan_jajaran_direksi']; ?></td>
-                    <td><?php echo $row_jajaran_direksi_en['tentang_jajaran_direksi']; ?></td>
-                    <td><?php echo $row_jajaran_direksi_en['gambar_jajaran_direksi']; ?></td>
-                    <td class="text-right">
+                    <td class="align-middle"><?php echo $row_jajaran_direksi_en['nama_jajaran_direksi']; ?></td>
+                    <td class="align-middle"><?php echo $row_jajaran_direksi_en['jabatan_jajaran_direksi']; ?></td>
+                    <td class="align-middle"><?php echo $row_jajaran_direksi_en['tentang_jajaran_direksi']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_jajaran_direksi_en['gambar_jajaran_direksi']; ?>"></td>
+                    <td class="text-right align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
@@ -244,11 +244,11 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Nama</th>
-                    <th>Jabatan</th>
-                    <th>Tentang</th>
-                    <th>Gambar</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama</th>
+                    <th class="align-middle">Jabatan</th>
+                    <th class="align-middle">Tentang</th>
+                    <th class="align-middle">Gambar</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -258,11 +258,11 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_jajaran_direksi_id['nama_jajaran_direksi']; ?></td>
-                    <td><?php echo $row_jajaran_direksi_id['jabatan_jajaran_direksi']; ?></td>
-                    <td><?php echo $row_jajaran_direksi_id['tentang_jajaran_direksi']; ?></td>
-                    <td><?php echo $row_jajaran_direksi_id['gambar_jajaran_direksi']; ?></td>
-                    <td class="text-right">
+                    <td class="align-middle"><?php echo $row_jajaran_direksi_id['nama_jajaran_direksi']; ?></td>
+                    <td class="align-middle"><?php echo $row_jajaran_direksi_id['jabatan_jajaran_direksi']; ?></td>
+                    <td class="align-middle"><?php echo $row_jajaran_direksi_id['tentang_jajaran_direksi']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_jajaran_direksi_id['gambar_jajaran_direksi']; ?>"></td>
+                    <td class="text-right align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
@@ -288,11 +288,11 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Nama</th>
-                    <th>Jabatan</th>
-                    <th>Tentang</th>
-                    <th>Gambar</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama</th>
+                    <th class="align-middle">Jabatan</th>
+                    <th class="align-middle">Tentang</th>
+                    <th class="align-middle">Gambar</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -302,11 +302,11 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_jajaran_direksi_cn['nama_jajaran_direksi']; ?></td>
-                    <td><?php echo $row_jajaran_direksi_cn['jabatan_jajaran_direksi']; ?></td>
-                    <td><?php echo $row_jajaran_direksi_cn['tentang_jajaran_direksi']; ?></td>
-                    <td><?php echo $row_jajaran_direksi_cn['gambar_jajaran_direksi']; ?></td>
-                    <td class="text-right">
+                    <td class="align-middle"><?php echo $row_jajaran_direksi_cn['nama_jajaran_direksi']; ?></td>
+                    <td class="align-middle"><?php echo $row_jajaran_direksi_cn['jabatan_jajaran_direksi']; ?></td>
+                    <td class="align-middle"><?php echo $row_jajaran_direksi_cn['tentang_jajaran_direksi']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_jajaran_direksi_cn['gambar_jajaran_direksi']; ?>"></td>
+                    <td class="text-right align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>

@@ -57,7 +57,7 @@
 			?>
 
 			<div class="col-md-4">
-			  <img class="img-fluid main-features mb-3" src="<?php echo $row_fitur['gambar_fitur']; ?>">
+			  <img class="img-fluid main-features mb-3" src="../<?php echo $row_fitur['gambar_fitur']; ?>">
 			    <h4><?php echo $row_fitur['nama_fitur']; ?></h4>
 			    <p><?php echo $row_fitur['deskripsi_fitur']; ?></p>
 			    <a href="#">Baca Lebih</a>
@@ -66,13 +66,13 @@
 			<?php } ?>
 			<!--
 			<div class="col-md-4">
-			  <img class="img-fluid main-features mb-3" src="img/features/feature-2.jpeg">
+			  <img class="img-fluid main-features mb-3" src="../img/features/feature-2.jpeg">
 			    <h4>Fitur 2</h4>
 			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
 			    <a href="#">Baca Lebih</a>	
 			</div>
 			<div class="col-md-4">
-			  <img class="img-fluid main-features mb-3" src="img/features/feature-3.jpeg">
+			  <img class="img-fluid main-features mb-3" src="../img/features/feature-3.jpeg">
 			    <h4>Fitur 3</h4>
 			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
 			    <a href="#">Baca Lebih</a>	
@@ -88,13 +88,13 @@
 		
 		<div class="row my-5">
 			<div class="col-4 d-flex align-items-center justify-content-center">
-				<img class="img-fluid" src="img/icons/icon-1.png" style="width: 70px;">
+				<img class="img-fluid" src="../img/icons/icon-1.png" style="width: 70px;">
 			</div>
 			<div class="col-4 d-flex align-items-center justify-content-center">
-				<img class="img-fluid" src="img/icons/icon-2.png" style="width: 70px;">
+				<img class="img-fluid" src="../img/icons/icon-2.png" style="width: 70px;">
 			</div>
 			<div class="col-4 d-flex align-items-center justify-content-center">
-				<img class="img-fluid" src="img/icons/icon-3.png" style="width: 70px;">
+				<img class="img-fluid" src="../img/icons/icon-3.png" style="width: 70px;">
 			</div>
 		</div>
 		<div class="row mb-5">
@@ -150,20 +150,20 @@
 	            ?>
 
 				<div class="col-md-3">
-					<img class="img-fluid projects" src="<?php echo $row_proyek['gambar_proyek']; ?>">
+					<img class="img-fluid projects" src="../<?php echo $row_proyek['gambar_proyek']; ?>">
 				</div>
 
 				<?php } ?>
 
 			<!--
 				<div class="col-md-3">
-					<img class="img-fluid projects" src="img/projects/projects-2.jpeg">
+					<img class="img-fluid projects" src="../img/projects/projects-2.jpeg">
 				</div>
 				<div class="col-md-3">
-					<img class="img-fluid projects" src="img/projects/projects-3.jpeg">
+					<img class="img-fluid projects" src="../img/projects/projects-3.jpeg">
 				</div>
 				<div class="col-md-3">
-					<img class="img-fluid projects" src="img/projects/projects-4.jpeg">
+					<img class="img-fluid projects" src="../img/projects/projects-4.jpeg">
 				</div>
 			-->
 			</div>

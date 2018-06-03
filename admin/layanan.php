@@ -54,10 +54,10 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Nama Layanan</th>
-                    <th>Deskripsi Layanan</th>
-                    <th>Gambar Layanan</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama Layanan</th>
+                    <th class="align-middle">Deskripsi Layanan</th>
+                    <th class="align-middle">Gambar Layanan</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -66,10 +66,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_layanan_en['nama_layanan']; ?></td>
-                    <td><?php echo $row_layanan_en['deskripsi_layanan']; ?></td>
-                    <td><?php echo $row_layanan_en['gambar_layanan']; ?></td>
-                    <td>
+                    <td class="align-middle"><?php echo $row_layanan_en['nama_layanan']; ?></td>
+                    <td class="align-middle"><?php echo $row_layanan_en['deskripsi_layanan']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_layanan_en['gambar_layanan']; ?>"></td>
+                    <td class="align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>
@@ -96,10 +96,10 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Nama Layanan</th>
-                    <th>Deskripsi Layanan</th>
-                    <th>Gambar Layanan</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama Layanan</th>
+                    <th class="align-middle">Deskripsi Layanan</th>
+                    <th class="align-middle">Gambar Layanan</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -108,10 +108,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_layanan_id['nama_layanan']; ?></td>
-                    <td><?php echo $row_layanan_id['deskripsi_layanan']; ?></td>
-                    <td><?php echo $row_layanan_id['gambar_layanan']; ?></td>
-                    <td>
+                    <td class="align-middle"><?php echo $row_layanan_id['nama_layanan']; ?></td>
+                    <td class="align-middle"><?php echo $row_layanan_id['deskripsi_layanan']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_layanan_id['gambar_layanan']; ?>"></td>
+                    <td class="align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>
@@ -138,10 +138,10 @@
               <table class="table table-hover">
                 <thead class="text-center">
                   <tr>
-                    <th>Nama Layanan</th>
-                    <th>Deskripsi Layanan</th>
-                    <th>Gambar Layanan</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama Layanan</th>
+                    <th class="align-middle">Deskripsi Layanan</th>
+                    <th class="align-middle">Gambar Layanan</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -150,10 +150,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_layanan_cn['nama_layanan']; ?></td>
-                    <td><?php echo $row_layanan_cn['deskripsi_layanan']; ?></td>
-                    <td><?php echo $row_layanan_cn['gambar_layanan']; ?></td>
-                    <td>
+                    <td class="align-middle"><?php echo $row_layanan_cn['nama_layanan']; ?></td>
+                    <td class="align-middle"><?php echo $row_layanan_cn['deskripsi_layanan']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_layanan_cn['gambar_layanan']; ?>"></td>
+                    <td class="align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>

@@ -54,10 +54,10 @@
               <table class="table table-hover text-center">
                 <thead>
                   <tr>
-                    <th>Nama proyek</th>
-                    <th>Lokasi proyek</th>
-                    <th>Gambar proyek</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama proyek</th>
+                    <th class="align-middle">Lokasi proyek</th>
+                    <th class="align-middle">Gambar proyek</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -66,10 +66,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_proyek_en['nama_proyek']; ?></td>
-                    <td><?php echo $row_proyek_en['lokasi_proyek']; ?></td>
-                    <td><?php echo $row_proyek_en['gambar_proyek']; ?></td>
-                    <td>
+                    <td class="align-middle"><?php echo $row_proyek_en['nama_proyek']; ?></td>
+                    <td class="align-middle"><?php echo $row_proyek_en['lokasi_proyek']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_proyek_en['gambar_proyek']; ?>"></td>
+                    <td class="align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>
@@ -96,10 +96,10 @@
               <table class="table table-hover text-center">
                 <thead>
                   <tr>
-                    <th>Nama proyek</th>
-                    <th>Lokasi proyek</th>
-                    <th>Gambar proyek</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama proyek</th>
+                    <th class="align-middle">Lokasi proyek</th>
+                    <th class="align-middle">Gambar proyek</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -108,10 +108,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_proyek_id['nama_proyek']; ?></td>
-                    <td><?php echo $row_proyek_id['lokasi_proyek']; ?></td>
-                    <td><?php echo $row_proyek_id['gambar_proyek']; ?></td>
-                    <td>
+                    <td class="align-middle"><?php echo $row_proyek_id['nama_proyek']; ?></td>
+                    <td class="align-middle"><?php echo $row_proyek_id['lokasi_proyek']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_proyek_id['gambar_proyek']; ?>"></td>
+                    <td class="align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>
@@ -138,10 +138,10 @@
               <table class="table table-hover text-center">
                 <thead>
                   <tr>
-                    <th>Nama proyek</th>
-                    <th>Lokasi proyek</th>
-                    <th>Gambar proyek</th>
-                    <th>Opsi</th>
+                    <th class="align-middle">Nama proyek</th>
+                    <th class="align-middle">Lokasi proyek</th>
+                    <th class="align-middle">Gambar proyek</th>
+                    <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -150,10 +150,10 @@
                   ?>
 
                   <tr>
-                    <td><?php echo $row_proyek_cn['nama_proyek']; ?></td>
-                    <td><?php echo $row_proyek_cn['lokasi_proyek']; ?></td>
-                    <td><?php echo $row_proyek_cn['gambar_proyek']; ?></td>
-                    <td>
+                    <td class="align-middle"><?php echo $row_proyek_cn['nama_proyek']; ?></td>
+                    <td class="align-middle"><?php echo $row_proyek_cn['lokasi_proyek']; ?></td>
+                    <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_proyek_cn['gambar_proyek']; ?>"></td>
+                    <td class="align-middle">
                       <a href="#" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>

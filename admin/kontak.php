@@ -1,17 +1,16 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" class="h-100">
 
     <?php include 'head.html'; ?>
 
     <?php include 'fungsi/koneksi.php'; ?>
 
-  </head>
-  <body>
+  <body class="h-100">
 
     <?php include 'navbar.php'; ?>
 
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid h-100">
+      <div class="row h-100">
         
         <?php include 'sidebar.html'; ?>
 
@@ -36,10 +35,10 @@
           <table class="table table-hover text-center">
             <thead>
               <tr>
-                <th>Alamat</th>
-                <th>Telepon</th>
-                <th>Email</th>
-                <th>Opsi</th>
+                <th class="align-middle">Alamat</th>
+                <th class="align-middle">Telepon</th>
+                <th class="align-middle">Email</th>
+                <th class="align-middle">Opsi</th>
               </tr>
             </thead>
             <tbody>
@@ -48,11 +47,11 @@
               ?>
 
               <tr>
-                <td><?php echo $row_kontak['alamat']; ?></td>
-                <td><?php echo $row_kontak['telepon']; ?></td>
-                <td><?php echo $row_kontak['email']; ?></td>
-                <td>
-                  <a href="#" class="btn btn-link">Ubah</a>
+                <td class="align-middle"><?php echo $row_kontak['alamat']; ?></td>
+                <td class="align-middle"><?php echo $row_kontak['telepon']; ?></td>
+                <td class="align-middle"><?php echo $row_kontak['email']; ?></td>
+                <td class="align-middle">
+                  <a href="ubah/ubah-kontak.php?id=<?php echo $row_kontak['id_kontak']; ?>" class="btn btn-link">Ubah</a>
                 </td>
               </tr>
 

@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" class="h-100">
 
     <?php include 'head.html'; ?>
 
     <?php include 'fungsi/koneksi.php'; ?>
 
   </head>
-  <body>
+  <body class="h-100">
 
     <?php include 'navbar.php'; ?>
 
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid h-100">
+      <div class="row h-100">
         
         <?php include 'sidebar.html'; ?>
 
@@ -36,9 +36,9 @@
           <table class="table table-hover text-center">
             <thead>
               <tr>
-                <th>Username</th>
-                <th>Password</th>
-                <th>Opsi</th>
+                <th class="align-middle">Username</th>
+                <th class="align-middle">Password</th>
+                <th class="align-middle">Opsi</th>
               </tr>
             </thead>
             <tbody>
@@ -47,10 +47,10 @@
               ?>
 
               <tr>
-                <td><?php echo $row_user['username']; ?></td>
-                <td><?php echo $row_user['password']; ?></td>
-                <td>
-                  <a href="#" class="btn btn-link">Ubah</a>
+                <td class="align-middle"><?php echo $row_user['username']; ?></td>
+                <td class="align-middle"><?php echo $row_user['password']; ?></td>
+                <td class="align-middle">
+                  <a href="ubah/ubah-pengguna.php?id=<?php echo $row_user['id_user']; ?>" class="btn btn-link">Ubah</a>
                 </td>
               </tr>
 

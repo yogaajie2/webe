@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2018 at 10:17 AM
+-- Generation Time: Jun 03, 2018 at 01:24 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -41,7 +41,7 @@ INSERT INTO `client` (`id_client`, `nama_client`) VALUES
 (1, 'Client 1'),
 (2, 'Client 2'),
 (3, 'Client Y'),
-(4, 'Client Z'),
+(4, 'edited Client Z'),
 (5, 'Client 5'),
 (6, 'Client X');
 
@@ -64,15 +64,15 @@ CREATE TABLE `fitur` (
 --
 
 INSERT INTO `fitur` (`id_fitur`, `nama_fitur`, `deskripsi_fitur`, `gambar_fitur`, `bahasa_fitur`) VALUES
-(1, 'Fitur 1 en', '[en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-1.jpeg', 'en'),
-(2, 'Fitur 2 en', '[en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-2.jpeg', 'en'),
-(3, 'Fitur 3 en', '[en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-3.jpeg', 'en'),
+(1, 'edited Fitur 1 en', '<p>edited [en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. <i>Ne eum stet melius</i>, recteque persecuti cum ex.</p>', 'img/features/feature-1.jpeg', 'en'),
+(2, 'Fitur 2 en', '<p>[en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>', 'img/features/feature-2.jpeg', 'en'),
+(3, 'Fitur 3 en', '<p>[en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>', 'img/features/feature-3.jpeg', 'en'),
 (4, 'Fitur 1 id', '[id] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-1.jpeg', 'id'),
 (5, 'Fitur 2 id', '[id] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-2.jpeg', 'id'),
 (6, 'Fitur 3 id', '[id] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-3.jpeg', 'id'),
 (7, 'Fitur 1 cn', '[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-1.jpeg', 'cn'),
 (8, 'Fitur 2 cn', '[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-2.jpeg', 'cn'),
-(9, 'Fitur 3 cn', '[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-3.jpeg', 'cn');
+(9, 'Fitur 3 cn', '<p>[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>', 'img/features/Jellyfish.jpg', 'cn');
 
 -- --------------------------------------------------------
 
@@ -122,7 +122,7 @@ CREATE TABLE `kontak` (
 --
 
 INSERT INTO `kontak` (`id_kontak`, `alamat`, `telepon`, `email`) VALUES
-(1, 'Ruko Golden 8 Blok I No.8, Pakulonan Barat, Tangerang, Banten 15810', '(021) 29238895', 'webe_piles@yahoo.com');
+(1, '<p>edited Ruko Golden 8 Blok I No.8, Pakulonan Barat, Tangerang, Banten 15810</p>', '(021) 29238895', 'webe_piles@yahoo.com');
 
 -- --------------------------------------------------------
 
@@ -182,7 +182,7 @@ INSERT INTO `pekerjaan` (`id_pekerjaan`, `nama_pekerjaan`, `bahasa_pekerjaan`) V
 (1, 'Pekerjaan 1 [en]', 'en'),
 (2, 'Pekerjaan 2 [en]', 'en'),
 (3, 'Pekerjaan 3 [en]', 'en'),
-(4, 'Pekerjaan 1 [id]', 'id'),
+(4, 'edited Pekerjaan 1 [id]', 'id'),
 (5, 'Pekerjaan 2 [id]', 'id'),
 (6, 'Pekerjaan 3 [id]', 'id'),
 (7, 'Pekerjaan 1 [cn]', 'cn'),
@@ -225,7 +225,7 @@ INSERT INTO `proyek` (`id_proyek`, `gambar_proyek`, `nama_proyek`, `lokasi_proye
 (15, 'img/projects/projects-6.jpeg', 'Proyek 6', 'Jakarta', 'id'),
 (16, 'img/projects/projects-7.jpeg', 'Proyek 7', 'Jakarta', 'id'),
 (17, 'img/projects/projects-8.jpeg', 'Proyek 8', 'Jakarta', 'id'),
-(18, 'img/projects/projects-9.jpeg', 'Proyek 9', 'Jakarta', 'id'),
+(18, 'img/projects/projects-9.jpg', 'Proyek 9', 'Jakarta', 'id'),
 (19, 'img/projects/projects-1.jpeg', '[cn] Proyek 1', '[cn] Jakarta', 'cn'),
 (20, 'img/projects/projects-2.jpeg', '[cn] Proyek 2', '[cn] Jakarta', 'cn'),
 (21, 'img/projects/projects-3.jpeg', '[cn] Proyek 3', '[cn] Jakarta', 'cn'),
@@ -234,7 +234,7 @@ INSERT INTO `proyek` (`id_proyek`, `gambar_proyek`, `nama_proyek`, `lokasi_proye
 (24, 'img/projects/projects-6.jpeg', '[cn] Proyek 6', '[cn] Jakarta', 'cn'),
 (25, 'img/projects/projects-7.jpeg', '[cn] Proyek 7', '[cn] Jakarta', 'cn'),
 (26, 'img/projects/projects-8.jpeg', '[cn] Proyek 8', '[cn] Jakarta', 'cn'),
-(27, 'img/projects/projects-9.jpeg', '[cn] Proyek 9', '[cn] Jakarta', 'cn');
+(27, 'img/projects/projects-9.jpg', '[cn] Proyek 9', '[cn] Jakarta', 'cn');
 
 -- --------------------------------------------------------
 
@@ -280,7 +280,7 @@ CREATE TABLE `testimonial` (
 --
 
 INSERT INTO `testimonial` (`id_testimonial`, `isi_testimonial`, `sumber_testimonial`, `bahasa_testimonial`) VALUES
-(1, '[en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.', 'John Doe', 'en'),
+(1, '<p>edited [en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'edited John Doe', 'en'),
 (2, '[id] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.', 'John Doe', 'id'),
 (3, '[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.', 'John Doe', 'cn');
 
