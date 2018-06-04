@@ -301,7 +301,9 @@
           <div class="row">
             <div class="col d-flex justify-content-between">
               <h2>Client</h2>
-              <a href="#" class="btn btn-link">Tambah Data</a>
+              <a href="tambah/tambah-client.php" class="btn btn-link">
+                <h3 style="color: #ff9933; font-weight: bold;">Tambah Data</h3>
+              </a>
             </div>
           </div>
           <br>
@@ -346,7 +348,9 @@
           <div class="row">
             <div class="col d-flex justify-content-between">
               <h2>Testimonial</h2>
-              <a href="#" class="btn btn-link">Tambah Data</a>
+              <a href="tambah/tambah-testimonial.php" class="btn btn-link">
+                <h3 style="color: #ff9933; font-weight: bold;">Tambah Data</h3>
+              </a>
             </div>
           </div>
           <br>

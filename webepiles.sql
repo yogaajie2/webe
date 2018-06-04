@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 04, 2018 at 04:25 AM
--- Server version: 10.1.30-MariaDB
--- PHP Version: 7.2.2
+-- Generation Time: Jun 04, 2018 at 10:40 AM
+-- Server version: 10.1.28-MariaDB
+-- PHP Version: 7.1.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -160,7 +160,8 @@ INSERT INTO `layanan` (`id_layanan`, `nama_layanan`, `deskripsi_layanan`, `gamba
 (15, 'Square Pile [cn]', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/square-pile.jpg', 'cn'),
 (16, 'Pipe Pile [cn]', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/pipe-pile.jpg', 'cn'),
 (17, 'Bored Pile [cn]', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/bored-pile.jpg', 'cn'),
-(18, 'Barrette Pile [cn]', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/barrette-pile.jpg', 'cn');
+(18, 'Barrette Pile [cn]', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/barrette-pile.jpg', 'cn'),
+(19, 'Example Pile', '<p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>', 'img/services/Penguins.jpg', 'id');
 
 -- --------------------------------------------------------
 
@@ -234,7 +235,8 @@ INSERT INTO `proyek` (`id_proyek`, `gambar_proyek`, `nama_proyek`, `lokasi_proye
 (24, 'img/projects/projects-6.jpeg', '[cn] Proyek 6', '[cn] Jakarta', 'cn'),
 (25, 'img/projects/projects-7.jpeg', '[cn] Proyek 7', '[cn] Jakarta', 'cn'),
 (26, 'img/projects/projects-8.jpeg', '[cn] Proyek 8', '[cn] Jakarta', 'cn'),
-(27, 'img/projects/projects-9.jpg', '[cn] Proyek 9', '[cn] Jakarta', 'cn');
+(27, 'img/projects/projects-9.jpg', '[cn] Proyek 9', '[cn] Jakarta', 'cn'),
+(28, 'img/projects/Lighthouse.jpg', 'Proyek WOOW', 'Digidaw', 'cn');
 
 -- --------------------------------------------------------
 
@@ -399,7 +401,7 @@ ALTER TABLE `kontak`
 -- AUTO_INCREMENT for table `layanan`
 --
 ALTER TABLE `layanan`
-  MODIFY `id_layanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_layanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `pekerjaan`
@@ -411,7 +413,7 @@ ALTER TABLE `pekerjaan`
 -- AUTO_INCREMENT for table `proyek`
 --
 ALTER TABLE `proyek`
-  MODIFY `id_proyek` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
+  MODIFY `id_proyek` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT for table `tentang_kami`
@@ -423,7 +425,7 @@ ALTER TABLE `tentang_kami`
 -- AUTO_INCREMENT for table `testimonial`
 --
 ALTER TABLE `testimonial`
-  MODIFY `id_testimonial` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_testimonial` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `user`

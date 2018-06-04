@@ -19,7 +19,9 @@
           <div class="row">
             <div class="col d-flex justify-content-between">
               <h2>Layanan</h2>
-              <a href="#" class="btn btn-link">Tambah Data</a>
+              <a href="tambah/tambah-layanan.php" class="btn btn-link">
+                <h3 style="color: #ff9933; font-weight: bold;">Tambah Data</h3>
+              </a>
             </div>
           </div>
           <br>
