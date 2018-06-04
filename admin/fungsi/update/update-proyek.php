@@ -5,26 +5,26 @@
 	$nama = $_REQUEST['nama'];
 	$deskripsi = $_REQUEST['deskripsi'];
 
-    $fitur = "SELECT * FROM fitur WHERE id_fitur = '$id'";
-    $hasil_fitur = mysqli_query($koneksi, $fitur);
-    if (!$hasil_fitur) {
+    $proyek = "SELECT * FROM proyek WHERE id_proyek = '$id'";
+    $hasil_proyek = mysqli_query($koneksi, $proyek);
+    if (!$hasil_proyek) {
       echo "ERROR";
     }
 
-    while ($row_fitur = mysqli_fetch_array($hasil_fitur, MYSQLI_ASSOC)) {
-    	$image = "../../../" . $row_fitur['gambar_fitur'];
+    while ($row_proyek = mysqli_fetch_array($hasil_proyek, MYSQLI_ASSOC)) {
+    	$image = "../../../" . $row_proyek['gambar_proyek'];
     }
 
     if ($_FILES["gambar"]["name"] == "") {
-		$path = $row_fitur['gambar_fitur'];
+		$path = $row_proyek['gambar_proyek'];
 	}
 	else {
 		//delete previous image
 		unlink($image);
 		//Upload image
-		$target_dir = "../../../img/features/";
+		$target_dir = "../../../img/projects/";
 		$target_file = $target_dir . basename($_FILES["gambar"]["name"]);
-		$path = "img/features/" . basename($_FILES["gambar"]["name"]);
+		$path = "img/projects/" . basename($_FILES["gambar"]["name"]);
 		$uploadOk = 1;
 		$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 		// Check if image file is a actual image or fake image
@@ -63,9 +63,9 @@
 		}
 	}
 
-	$sql = "UPDATE `fitur` SET `nama_fitur`='$nama',`deskripsi_fitur`='$deskripsi',`gambar_fitur`='$path' WHERE `id_fitur`='$id'";
+	$sql = "UPDATE `proyek` SET `nama_proyek`='$nama',`lokasi_proyek`='$deskripsi',`gambar_proyek`='$path' WHERE `id_proyek`='$id'";
 
 	$result = mysqli_query($koneksi, $sql);
 
-	header("location:../../beranda.php");
+	header("location:../../proyek.php");
 ?>

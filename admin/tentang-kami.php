@@ -69,7 +69,7 @@
                     <td class="align-middle"><?php echo $row_tentang_kami_en['isi_tentang_kami']; ?></td>
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_tentang_kami_en['gambar_tentang_kami']; ?>"></td>
                     <td class="align-middle">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-tentang-kami.php?id=<?php echo $row_tentang_kami_en['id_tentang_kami']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -110,7 +110,7 @@
                     <td class="align-middle"><?php echo $row_tentang_kami_id['isi_tentang_kami']; ?></td>
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_tentang_kami_id['gambar_tentang_kami']; ?>"></td>
                     <td class="align-middle">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-tentang-kami.php?id=<?php echo $row_tentang_kami_id['id_tentang_kami']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -151,7 +151,7 @@
                     <td class="align-middle"><?php echo $row_tentang_kami_cn['isi_tentang_kami']; ?></td>
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_tentang_kami_cn['gambar_tentang_kami']; ?>"></td>
                     <td class="align-middle">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-tentang-kami.php?id=<?php echo $row_tentang_kami_cn['id_tentang_kami']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -219,7 +219,7 @@
                     <td class="align-middle"><?php echo $row_jajaran_direksi_en['tentang_jajaran_direksi']; ?></td>
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_jajaran_direksi_en['gambar_jajaran_direksi']; ?>"></td>
                     <td class="text-right align-middle">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-jajaran-direksi.php?id=<?php echo $row_jajaran_direksi_en['id_jajaran_direksi']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -263,7 +263,7 @@
                     <td class="align-middle"><?php echo $row_jajaran_direksi_id['tentang_jajaran_direksi']; ?></td>
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_jajaran_direksi_id['gambar_jajaran_direksi']; ?>"></td>
                     <td class="text-right align-middle">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-jajaran-direksi.php?id=<?php echo $row_jajaran_direksi_id['id_jajaran_direksi']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 
@@ -307,7 +307,7 @@
                     <td class="align-middle"><?php echo $row_jajaran_direksi_cn['tentang_jajaran_direksi']; ?></td>
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_jajaran_direksi_cn['gambar_jajaran_direksi']; ?>"></td>
                     <td class="text-right align-middle">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-jajaran-direksi.php?id=<?php echo $row_jajaran_direksi_cn['id_jajaran_direksi']; ?>" class="btn btn-link">Ubah</a>
                     </td>
                   </tr>
 

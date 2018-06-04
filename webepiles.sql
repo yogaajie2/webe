@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 03, 2018 at 01:24 PM
+-- Generation Time: Jun 04, 2018 at 04:25 AM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -64,7 +64,7 @@ CREATE TABLE `fitur` (
 --
 
 INSERT INTO `fitur` (`id_fitur`, `nama_fitur`, `deskripsi_fitur`, `gambar_fitur`, `bahasa_fitur`) VALUES
-(1, 'edited Fitur 1 en', '<p>edited [en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. <i>Ne eum stet melius</i>, recteque persecuti cum ex.</p>', 'img/features/feature-1.jpeg', 'en'),
+(1, 'edited Fitur 1 en', '<p>edited [en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. <i>Ne eum stet melius</i>, recteque persecuti cum ex.</p>', 'img/features/pexels-photo-95687.jpeg', 'en'),
 (2, 'Fitur 2 en', '<p>[en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>', 'img/features/feature-2.jpeg', 'en'),
 (3, 'Fitur 3 en', '<p>[en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>', 'img/features/feature-3.jpeg', 'en'),
 (4, 'Fitur 1 id', '[id] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-1.jpeg', 'id'),
@@ -95,7 +95,7 @@ CREATE TABLE `jajaran_direksi` (
 
 INSERT INTO `jajaran_direksi` (`id_jajaran_direksi`, `nama_jajaran_direksi`, `jabatan_jajaran_direksi`, `tentang_jajaran_direksi`, `gambar_jajaran_direksi`, `bahasa_jajaran_direksi`) VALUES
 (1, 'Agus Hasan', 'Director', '[en] Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.', 'img/contents/profile.png', 'en'),
-(2, 'Hana Yuliana', 'Vice Director', '[en] Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.', 'img/contents/profile.png', 'en'),
+(2, 'edited Hana Yuliana', 'edited Vice Director', '<p>edited [en] Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>', 'img/contents/profile - Copy.png', 'en'),
 (3, 'Priscilla Elsa', 'Secretary', '[en] Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.', 'img/contents/profile.png', 'en'),
 (4, 'Agus Hasan', 'Direktur', '[id] Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.', 'img/contents/profile.png', 'id'),
 (5, 'Hana Yuliana', 'Wakil Direktur', '[id] Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.', 'img/contents/profile.png', 'id'),
@@ -143,8 +143,8 @@ CREATE TABLE `layanan` (
 --
 
 INSERT INTO `layanan` (`id_layanan`, `nama_layanan`, `deskripsi_layanan`, `gambar_layanan`, `bahasa_layanan`) VALUES
-(1, 'Driven Pile [en]', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/driven-pile.jpg', 'en'),
-(2, 'Spun Pile [en]', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/spun-pile.jpg', 'en'),
+(1, 'edited Driven Pile [en]', '<p>edited [en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/driven-pile - Copy.jpg', 'en'),
+(2, 'Spun Pile [en]', '<p>[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/spun-pile.jpg', 'en'),
 (3, 'Square Pile [en]', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/square-pile.jpg', 'en'),
 (4, 'Pipe Pile [en]', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/pipe-pile.jpg', 'en'),
 (5, 'Bored Pile [en]', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/bored-pile.jpg', 'en'),
@@ -209,7 +209,7 @@ CREATE TABLE `proyek` (
 
 INSERT INTO `proyek` (`id_proyek`, `gambar_proyek`, `nama_proyek`, `lokasi_proyek`, `bahasa_proyek`) VALUES
 (1, 'img/projects/projects-1.jpeg', 'Project 1', 'Jakarta', 'en'),
-(2, 'img/projects/projects-2.jpeg', 'Project 2', 'Jakarta', 'en'),
+(2, 'img/projects/projects-2 - Copy.jpeg', 'edited Project 2', 'edited Jakarta', 'en'),
 (3, 'img/projects/projects-3.jpeg', 'Project 3', 'Jakarta', 'en'),
 (4, 'img/projects/projects-4.jpeg', 'Project 4', 'Jakarta', 'en'),
 (5, 'img/projects/projects-5.jpeg', 'Project 5', 'Jakarta', 'en'),
@@ -256,7 +256,7 @@ CREATE TABLE `tentang_kami` (
 
 INSERT INTO `tentang_kami` (`id_tentang_kami`, `judul_tentang_kami`, `isi_tentang_kami`, `gambar_tentang_kami`, `bahasa_tentang_kami`) VALUES
 (1, 'Vision and Mission', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img/contents/contents-1.jpg', 'en'),
-(2, 'What We Do', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img/contents/contents-2.jpg', 'en'),
+(2, 'edited What We Do', '<p>edited [en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>', 'img/contents/main-carousel-1.jpg', 'en'),
 (3, 'Visi dan Misi', '[id] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img/contents/contents-1.jpg', 'id'),
 (4, 'Yang Kami Kerjakan', '[id] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img/contents/contents-2.jpg', 'id'),
 (5, '[cn] Visi dan Misi', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img/contents/contents-1.jpg', 'cn'),

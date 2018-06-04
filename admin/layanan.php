@@ -70,7 +70,7 @@
                     <td class="align-middle"><?php echo $row_layanan_en['deskripsi_layanan']; ?></td>
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_layanan_en['gambar_layanan']; ?>"></td>
                     <td class="align-middle">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-layanan.php?id=<?php echo $row_layanan_en['id_layanan']; ?>" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
@@ -112,7 +112,7 @@
                     <td class="align-middle"><?php echo $row_layanan_id['deskripsi_layanan']; ?></td>
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_layanan_id['gambar_layanan']; ?>"></td>
                     <td class="align-middle">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-layanan.php?id=<?php echo $row_layanan_id['id_layanan']; ?>" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
@@ -154,7 +154,7 @@
                     <td class="align-middle"><?php echo $row_layanan_cn['deskripsi_layanan']; ?></td>
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_layanan_cn['gambar_layanan']; ?>"></td>
                     <td class="align-middle">
-                      <a href="#" class="btn btn-link">Ubah</a>
+                      <a href="ubah/ubah-layanan.php?id=<?php echo $row_layanan_cn['id_layanan']; ?>" class="btn btn-link">Ubah</a>
                       <a href="#" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
