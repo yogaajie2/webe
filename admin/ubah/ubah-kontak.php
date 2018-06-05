@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="id" class="h-100">
 
-    <?php include 'head.html'; ?>
+    <?php include 'head.php'; ?>
 
     <?php include '../fungsi/koneksi.php'; ?>
 

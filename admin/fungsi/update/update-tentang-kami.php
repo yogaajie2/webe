@@ -67,5 +67,5 @@
 
 	$result = mysqli_query($koneksi, $sql);
 
-	header("location:../../beranda.php");
+	header("location:../../tentang-kami.php");
 ?>

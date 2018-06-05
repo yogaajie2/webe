@@ -34,7 +34,7 @@
             ?>
 
             <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="<?php echo $row_proyek['gambar_proyek']; ?>">
+                <img class="img-fluid" style="width: 100%; height: 240px;" src="../<?php echo $row_proyek['gambar_proyek']; ?>">
             </div>
 
 

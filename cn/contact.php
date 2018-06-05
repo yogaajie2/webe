@@ -74,7 +74,7 @@
 
                 </div>
                 <div class="row">
-                    <img class="img-fluid" src="img/contents/map.png">
+                    <img class="img-fluid" src="../img/contents/map.png">
                 </div>
             </div>
         </div>

@@ -32,7 +32,7 @@
             ?>
 
             <div class="col-md-6">
-                <img class="img-fluid" style="width: 100%; height: 320px;" src="<?php echo $row_tentang_kami['gambar_tentang_kami']; ?>">
+                <img class="img-fluid" style="width: 100%; height: 320px;" src="../<?php echo $row_tentang_kami['gambar_tentang_kami']; ?>">
                 <h3 class="mt-3" style="text-transform: uppercase;"><?php echo $row_tentang_kami['judul_tentang_kami']; ?></h3>
                 <p><?php echo $row_tentang_kami['isi_tentang_kami']; ?></p>
             </div>
@@ -59,7 +59,7 @@
             ?>
 
             <div class="col-md-4">
-                <img class="img-fluid" src="<?php echo $row_jajaran_direksi['gambar_jajaran_direksi']; ?>">
+                <img class="img-fluid" src="../<?php echo $row_jajaran_direksi['gambar_jajaran_direksi']; ?>">
                 <h4 class="mt-3"><?php echo $row_jajaran_direksi['nama_jajaran_direksi']; ?></h4>
                 <p style="font-style: italic;"><?php echo $row_jajaran_direksi['jabatan_jajaran_direksi']; ?></p>
                 <p><?php echo $row_jajaran_direksi['tentang_jajaran_direksi']; ?></p>

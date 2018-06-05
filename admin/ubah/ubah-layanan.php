@@ -1,16 +1,16 @@
 <!doctype html>
-<html lang="id" class="h-100">
+<html lang="id">
 
-    <?php include 'head.html'; ?>
+    <?php include 'head.php'; ?>
 
     <?php include '../fungsi/koneksi.php'; ?>
 
-  <body class="h-100">
+  <body>
 
     <?php include 'navbar.php'; ?>
 
-    <div class="container-fluid h-100">
-      <div class="row h-100">
+    <div class="container-fluid">
+      <div class="row">
         
         <?php include 'sidebar.html'; ?>
 
@@ -48,7 +48,7 @@
               <input type="file" class="form-control" name="gambar" id="gambar">
               <img style="width: 320px; height: 240px;" src="../../<?php echo $row['gambar_layanan']; ?>">
             </div>
-            <button type="submit" class="btn btn-outline-dark">Ubah Data</button>
+            <button type="submit" class="btn btn-outline-dark mb-5">Ubah Data</button>
           </form>
         </div>
 

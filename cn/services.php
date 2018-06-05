@@ -34,7 +34,7 @@
             ?>
 
             <div class="col-md-4">
-                <img class="image-fluid" style="width: 100%; height: 230px;" src="<?php echo $row_layanan['gambar_layanan']; ?>">
+                <img class="image-fluid" style="width: 100%; height: 230px;" src="../<?php echo $row_layanan['gambar_layanan']; ?>">
                 <h3 class="mt-3"><?php echo $row_layanan['nama_layanan']; ?></h3>
                 <p><?php echo $row_layanan['deskripsi_layanan']; ?></p>
             </div>
