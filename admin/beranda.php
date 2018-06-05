@@ -1,9 +1,19 @@
 <!doctype html>
 <html lang="id">
+  <?php
+    // Initialize the session
+    session_start();
+     
+    // If session variable is not set it will redirect to login page
+    if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+      header("location: index.php");
+      exit;
+    }
+  ?>
 
-    <?php include 'head.html'; ?>
+  <?php include 'head.html'; ?>
 
-    <?php include 'fungsi/koneksi.php'; ?>
+  <?php include 'fungsi/koneksi.php'; ?>
 
   </head>
   <body>
@@ -335,7 +345,7 @@
                 <td class="align-middle"><?php echo $row_client['nama_client']; ?></td>
                 <td class="text-right">
                   <a href="ubah/ubah-client.php?id=<?php echo $row_client['id_client']; ?>" class="btn btn-link">Ubah</a>
-                  <a href="#" class="btn btn-link">Hapus</a>
+                  <a href="fungsi/delete/delete-client.php?id=<?php echo $row_client['id_client']; ?>" class="btn btn-link">Hapus</a>
                 </td>
               </tr>
 
@@ -400,7 +410,7 @@
                     <td class="align-middle"><?php echo $row_testimonial_en['sumber_testimonial']; ?></td>
                     <td class="align-middle">
                       <a href="ubah/ubah-testimonial.php?id=<?php echo $row_testimonial_en['id_testimonial']; ?>" class="btn btn-link">Ubah</a>
-                      <a href="#" class="btn btn-link">Hapus</a>
+                      <a href="fungsi/delete/delete-testimonial.php?id=<?php echo $row_testimonial_en['id_testimonial']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
 
@@ -440,7 +450,7 @@
                     <td class="align-middle"><?php echo $row_testimonial_id['sumber_testimonial']; ?></td>
                     <td class="align-middle">
                       <a href="ubah/ubah-testimonial.php?id=<?php echo $row_testimonial_id['id_testimonial']; ?>" class="btn btn-link">Ubah</a>
-                      <a href="#" class="btn btn-link">Hapus</a>
+                      <a href="fungsi/delete/delete-testimonial.php?id=<?php echo $row_testimonial_id['id_testimonial']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
 
@@ -480,7 +490,7 @@
                     <td class="align-middle"><?php echo $row_testimonial_cn['sumber_testimonial']; ?></td>
                     <td class="align-middle">
                       <a href="ubah/ubah-testimonial.php?id=<?php echo $row_testimonial_cn['id_testimonial']; ?>" class="btn btn-link">Ubah</a>
-                      <a href="#" class="btn btn-link">Hapus</a>
+                      <a href="fungsi/delete/delete-testimonial.php?id=<?php echo $row_testimonial_cn['id_testimonial']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
 

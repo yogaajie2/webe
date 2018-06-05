@@ -4,7 +4,7 @@
       <h1 class="text-uppercase">Webe Piles</h1>
     </a>
     <div class="navbar-nav ml-auto">
-      <p class="navbar-text" style="color: #fff;">Selamat Datang, Admin. <a href="index.php">Logout</a></p>
+      <p class="navbar-text" style="color: #fff;">Selamat Datang, Admin. <a href="fungsi/logout.php">Logout</a></p>
     </div>
   </nav>
 </div>

@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="id" class="h-100">
 
+    <?php
+      // Initialize the session
+      session_start();
+
+      // If session variable is not set it will redirect to login page
+      if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+        header("location: index.php");
+        exit;
+      }
+    ?>
+
     <?php include 'head.html'; ?>
 
     <?php include 'fungsi/koneksi.php'; ?>
@@ -26,9 +37,9 @@
           <?php 
             include 'fungsi/koneksi.php';
 
-            $user = "SELECT * FROM user";
-            $hasil_user = mysqli_query($koneksi, $user);
-            if (!$hasil_user) {
+            $users = "SELECT * FROM users";
+            $hasil_users = mysqli_query($koneksi, $users);
+            if (!$hasil_users) {
               echo "ERROR";
             }
           ?>
@@ -36,22 +47,16 @@
           <table class="table table-hover text-center">
             <thead>
               <tr>
-                <th class="align-middle">Username</th>
-                <th class="align-middle">Password</th>
-                <th class="align-middle">Opsi</th>
+                <th class="align-middle">username</th>
               </tr>
             </thead>
             <tbody>
               <?php 
-                while ($row_user = mysqli_fetch_array($hasil_user, MYSQLI_ASSOC)) {
+                while ($row_users = mysqli_fetch_array($hasil_users, MYSQLI_ASSOC)) {
               ?>
 
               <tr>
-                <td class="align-middle"><?php echo $row_user['username']; ?></td>
-                <td class="align-middle"><?php echo $row_user['password']; ?></td>
-                <td class="align-middle">
-                  <a href="ubah/ubah-pengguna.php?id=<?php echo $row_user['id_user']; ?>" class="btn btn-link">Ubah</a>
-                </td>
+                <td class="align-middle"><?php echo $row_users['username']; ?></td>
               </tr>
 
               <?php 

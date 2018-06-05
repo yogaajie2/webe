@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 04, 2018 at 10:40 AM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.11
+-- Generation Time: Jun 05, 2018 at 09:06 AM
+-- Server version: 10.1.30-MariaDB
+-- PHP Version: 7.2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -38,12 +38,12 @@ CREATE TABLE `client` (
 --
 
 INSERT INTO `client` (`id_client`, `nama_client`) VALUES
-(1, 'Client 1'),
 (2, 'Client 2'),
 (3, 'Client Y'),
 (4, 'edited Client Z'),
 (5, 'Client 5'),
-(6, 'Client X');
+(6, 'Client X'),
+(8, 'Client');
 
 -- --------------------------------------------------------
 
@@ -289,21 +289,22 @@ INSERT INTO `testimonial` (`id_testimonial`, `isi_testimonial`, `sumber_testimon
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `user` (
-  `id_user` int(11) NOT NULL,
-  `username` varchar(30) NOT NULL,
-  `password` varchar(30) NOT NULL
+CREATE TABLE `users` (
+  `id_users` int(11) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `user`
+-- Dumping data for table `users`
 --
 
-INSERT INTO `user` (`id_user`, `username`, `password`) VALUES
-(1, 'Priscil', 'bonifasius');
+INSERT INTO `users` (`id_users`, `username`, `password`, `created_at`) VALUES
+(2, 'priscil', '$2y$10$QOkiDrahZH/0.XKl0Zb2ruYVtSNftMjhBE6wn1VcruKW1uwcQ3v8a', '2018-06-05 13:11:12');
 
 --
 -- Indexes for dumped tables
@@ -364,10 +365,11 @@ ALTER TABLE `testimonial`
   ADD PRIMARY KEY (`id_testimonial`);
 
 --
--- Indexes for table `user`
+-- Indexes for table `users`
 --
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id_user`);
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id_users`),
+  ADD UNIQUE KEY `username` (`username`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -377,7 +379,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `client`
 --
 ALTER TABLE `client`
-  MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `fitur`
@@ -425,13 +427,13 @@ ALTER TABLE `tentang_kami`
 -- AUTO_INCREMENT for table `testimonial`
 --
 ALTER TABLE `testimonial`
-  MODIFY `id_testimonial` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_testimonial` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT for table `users`
 --
-ALTER TABLE `user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+ALTER TABLE `users`
+  MODIFY `id_users` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

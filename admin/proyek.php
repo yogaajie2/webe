@@ -1,6 +1,17 @@
 <!doctype html>
 <html lang="id">
 
+    <?php
+      // Initialize the session
+      session_start();
+
+      // If session variable is not set it will redirect to login page
+      if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
+        header("location: index.php");
+        exit;
+      }
+    ?>
+
     <?php include 'head.html'; ?>
 
     <?php include 'fungsi/koneksi.php'; ?>
@@ -73,7 +84,7 @@
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_proyek_en['gambar_proyek']; ?>"></td>
                     <td class="align-middle">
                       <a href="ubah/ubah-proyek.php?id=<?php echo $row_proyek_en['id_proyek']; ?>" class="btn btn-link">Ubah</a>
-                      <a href="#" class="btn btn-link">Hapus</a>
+                      <a href="fungsi/delete/delete-proyek.php?id=<?php echo $row_proyek_en['id_proyek']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
 
@@ -115,7 +126,7 @@
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_proyek_id['gambar_proyek']; ?>"></td>
                     <td class="align-middle">
                       <a href="ubah/ubah-proyek.php?id=<?php echo $row_proyek_id['id_proyek']; ?>" class="btn btn-link">Ubah</a>
-                      <a href="#" class="btn btn-link">Hapus</a>
+                      <a href="fungsi/delete/delete-proyek.php?id=<?php echo $row_proyek_id['id_proyek']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
 
@@ -157,7 +168,7 @@
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_proyek_cn['gambar_proyek']; ?>"></td>
                     <td class="align-middle">
                       <a href="ubah/ubah-proyek.php?id=<?php echo $row_proyek_cn['id_proyek']; ?>" class="btn btn-link">Ubah</a>
-                      <a href="#" class="btn btn-link">Hapus</a>
+                      <a href="fungsi/delete/delete-proyek.php?id=<?php echo $row_proyek_cn['id_proyek']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
 
