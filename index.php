@@ -13,22 +13,43 @@
                 </div>
             </div>
         </div>
-        <div class="container h-25 d-flex align-items-center justify-content-center">   
-            <div class="row">
+        <div class="container h-25 d-flex align-items-center justify-content-center">
+            <div class="row mx-0">
                 <div class="col-4">
-                    <a href="home.php">
+                    <div class="container position-relative d-inline-block overlay-container p-0">
                         <span class="display-1 flag-icon flag-icon-us"></span>
-                    </a>
+                        <a href="home.php">
+                            <div class="container position-absolute language-overlay p-0">
+                                <div class="position-absolute language-overlay-text">
+                                    <h3>English</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-4">
-                    <a href="id/home.php">
+                    <div class="container position-relative d-inline-block overlay-container p-0">
                         <span class="display-1 flag-icon flag-icon-id"></span>
-                    </a>
+                        <a href="id/home.php">
+                            <div class="container position-absolute language-overlay p-0">
+                                <div class="position-absolute language-overlay-text">
+                                    <h3>Indonesia</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
                 <div class="col-4">
-                    <a href="cn/home.php">
+                    <div class="container position-relative d-inline-block overlay-container p-0">
                         <span class="display-1 flag-icon flag-icon-cn"></span>
-                    </a>
+                        <a href="cn/home.php">
+                            <div class="container position-absolute language-overlay p-0">
+                                <div class="position-absolute language-overlay-text">
+                                    <h3>Chinese</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

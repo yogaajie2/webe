@@ -1,18 +1,7 @@
 <!doctype html>
 <html lang="id" class="h-100">
 
-    <?php
-      // Initialize the session
-      session_start();
-
-      // If session variable is not set it will redirect to login page
-      if(!isset($_SESSION['username']) || empty($_SESSION['username'])){
-        header("location: index.php");
-        exit;
-      }
-    ?>
-
-    <?php include 'head.html'; ?>
+    <?php include 'head.php'; ?>
 
     <?php include 'fungsi/koneksi.php'; ?>
 
@@ -30,6 +19,9 @@
           <div class="row">
             <div class="col d-flex justify-content-between">
               <h2>Pengguna</h2>
+              <a href="tambah/tambah-pengguna.php" class="btn btn-link">
+                <h3 style="color: #ff9933; font-weight: bold;">Tambah Data</h3>
+              </a>
             </div>
           </div>
           <br>

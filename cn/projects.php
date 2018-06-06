@@ -34,7 +34,15 @@
             ?>
 
             <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="../<?php echo $row_proyek['gambar_proyek']; ?>">
+                <div class="container position-relative d-inline-block overlay-container p-0">
+                    <img class="img-fluid" style="width: 100%; height: 240px;" src="../<?php echo $row_proyek['gambar_proyek']; ?>">
+                    <div class="container position-absolute project-overlay p-0">
+                        <div class="position-absolute project-overlay-text">
+                            <h3><?php echo $row_proyek['nama_proyek']; ?></h3>
+                            <p><?php echo $row_proyek['lokasi_proyek']; ?></p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
 
