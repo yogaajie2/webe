@@ -25,26 +25,26 @@
         <div class="row mt-5">
             <div class="col-md-6">
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <form>
+                <form action="pesan.php" method="POST">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nama">
+                        <input type="text" class="form-control" name="nama" placeholder="Nama">
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email">
+                        <input type="email" class="form-control" name="email" placeholder="Email">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Nama Perusahaan">
+                        <input type="text" class="form-control" name="perusahaan" placeholder="Nama Perusahaan">
                     </div>
                     <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="No. Telepon">
+                        <input type="tel" class="form-control" name="telepon" placeholder="Nomor Telepon">
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Subjek">
+                        <input type="text" class="form-control" name="subjek" placeholder="Subjek">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" rows="5">
-                        </textarea>
+                        <textarea class="form-control" rows="5" name="pesan">Pesan...</textarea>
                     </div>
+                    <button type="submit" class="btn btn-light">Kirim Pesan</button>
                 </form>
             </div>
             <div class="col-md-6">

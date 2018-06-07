@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.7.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2018 at 05:09 PM
--- Server version: 10.1.30-MariaDB
--- PHP Version: 7.2.2
+-- Generation Time: Jun 07, 2018 at 10:13 AM
+-- Server version: 10.1.28-MariaDB
+-- PHP Version: 7.1.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -192,6 +192,33 @@ INSERT INTO `pekerjaan` (`id_pekerjaan`, `nama_pekerjaan`, `bahasa_pekerjaan`) V
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `pesan`
+--
+
+CREATE TABLE `pesan` (
+  `id_pesan` int(11) NOT NULL,
+  `nama_pengirim` varchar(100) NOT NULL,
+  `email_pengirim` varchar(100) NOT NULL,
+  `perusahaan_pengirim` varchar(50) NOT NULL,
+  `telepon_pengirim` varchar(30) NOT NULL,
+  `subjek_pesan` varchar(200) NOT NULL,
+  `pesan` text NOT NULL,
+  `bahasa_pesan` varchar(2) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `pesan`
+--
+
+INSERT INTO `pesan` (`id_pesan`, `nama_pengirim`, `email_pengirim`, `perusahaan_pengirim`, `telepon_pengirim`, `subjek_pesan`, `pesan`, `bahasa_pesan`) VALUES
+(1, 'GOY', 'yogaajie2@gmail.com', 'PT. MANJIW', '+6226516646', 'WOI', 'yooooooooooooooooooooooo      ', 'en'),
+(2, 'goy lagee', 'yogaajie2@gmail.com', 'PT. MANJIW', '+6226516646', 'WOI 2', 'ayyyyyy', 'en'),
+(3, 'goy', 'yogaajie2@gmail.com', 'PT. MANJIW', '+6226516646', 'WOI id', 'bruhh', 'id'),
+(4, 'goi', 'yogaajie2@gmail.com', 'PT. MANJIW', '+6226516646', 'WOI cn', 'heheh', 'cn');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `proyek`
 --
 
@@ -347,6 +374,12 @@ ALTER TABLE `pekerjaan`
   ADD PRIMARY KEY (`id_pekerjaan`);
 
 --
+-- Indexes for table `pesan`
+--
+ALTER TABLE `pesan`
+  ADD PRIMARY KEY (`id_pesan`);
+
+--
 -- Indexes for table `proyek`
 --
 ALTER TABLE `proyek`
@@ -410,6 +443,12 @@ ALTER TABLE `layanan`
 --
 ALTER TABLE `pekerjaan`
   MODIFY `id_pekerjaan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT for table `pesan`
+--
+ALTER TABLE `pesan`
+  MODIFY `id_pesan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `proyek`
