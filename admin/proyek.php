@@ -46,7 +46,7 @@
               <?php 
                 include 'fungsi/koneksi.php';
 
-                $proyek_en = "SELECT * FROM proyek WHERE bahasa_proyek = 'en'";
+                $proyek_en = "SELECT * FROM proyek WHERE bahasa_proyek = 'en' ORDER BY id_proyek DESC";
                 $hasil_proyek_en = mysqli_query($koneksi, $proyek_en);
                 if (!$hasil_proyek_en) {
                   echo "ERROR";
@@ -88,7 +88,7 @@
               <?php 
                 include 'fungsi/koneksi.php';
 
-                $proyek_id = "SELECT * FROM proyek WHERE bahasa_proyek = 'id'";
+                $proyek_id = "SELECT * FROM proyek WHERE bahasa_proyek = 'id'  ORDER BY id_proyek DESC";
                 $hasil_proyek_id = mysqli_query($koneksi, $proyek_id);
                 if (!$hasil_proyek_id) {
                   echo "ERROR";
@@ -130,7 +130,7 @@
               <?php 
                 include 'fungsi/koneksi.php';
 
-                $proyek_cn = "SELECT * FROM proyek WHERE bahasa_proyek = 'cn'";
+                $proyek_cn = "SELECT * FROM proyek WHERE bahasa_proyek = 'cn' ORDER BY id_proyek DESC";
                 $hasil_proyek_cn = mysqli_query($koneksi, $proyek_cn);
                 if (!$hasil_proyek_cn) {
                   echo "ERROR";

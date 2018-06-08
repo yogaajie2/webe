@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="en">
 
-  <?php
-  	include ('fungsi/koneksi.php');
-  	include ('head.html');
-  ?>
+  <?php include ('fungsi/koneksi.php'); ?>
 
+  <head>
+
+  	<?php include ('head.html'); ?>
+
+  	<title>Home | Webe Piles</title>
+  </head>
+  
   <body>
   	<div class="container-fluid sticky-top menu">
   		<div class="container">
@@ -143,14 +147,22 @@
 			<div class="row mt-5">
 
 				<?php
-	                $proyek = "SELECT * FROM proyek LIMIT 4";
+	                $proyek = "SELECT * FROM proyek WHERE bahasa_proyek = 'en' ORDER BY id_proyek DESC LIMIT 4";
 	                $hasil_proyek = mysqli_query($koneksi, $proyek);
 
 	                while ($row_proyek = mysqli_fetch_array($hasil_proyek, MYSQLI_ASSOC)) {
 	            ?>
 
 				<div class="col-md-3">
-					<img class="img-fluid projects" src="<?php echo $row_proyek['gambar_proyek']; ?>">
+					<div class="container position-relative d-inline-block p-0">
+						<img class="img-fluid projects" src="<?php echo $row_proyek['gambar_proyek']; ?>">
+						<div class="container position-absolute project-overlay p-0">
+	                        <div class="position-absolute project-overlay-text">
+	                            <h3><?php echo $row_proyek['nama_proyek']; ?></h3>
+	                            <p><?php echo $row_proyek['lokasi_proyek']; ?></p>
+	                        </div>
+	                    </div>
+					</div>
 				</div>
 
 				<?php } ?>
@@ -183,7 +195,7 @@
 							<tr>
 
 								<?php
-									$client = "SELECT * FROM client";
+									$client = "SELECT * FROM client ORDER BY id_client DESC";
 									$hasil_client = mysqli_query($koneksi, $client);
 
 									$i = 0;

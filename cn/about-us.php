@@ -2,7 +2,13 @@
 <html lang="en">
 
   <?php include ('../fungsi/koneksi.php'); ?>
-  <?php include ('head.html'); ?>
+
+  <head>
+
+    <?php include ('head.html'); ?>
+
+    <title>Tentang Kami | Webe Piles</title>
+  </head> ?>
 
   <body>
     <div class="container-fluid sticky-top menu">

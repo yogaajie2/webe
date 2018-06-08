@@ -1,17 +1,17 @@
 <!doctype html>
-<html lang="id">
+<html lang="id" class="h-100">
 
     <?php include 'head.php'; ?>
 
     <?php include 'fungsi/koneksi.php'; ?>
 
   </head>
-  <body>
+  <body class="h-100">
 
     <?php include 'navbar.php'; ?>
 
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid h-100">
+      <div class="row h-100">
         
         <?php include 'sidebar.html'; ?>
 
@@ -43,7 +43,7 @@
               <?php 
                 include 'fungsi/koneksi.php';
 
-                $pesan_en = "SELECT * FROM pesan WHERE bahasa_pesan = 'en'";
+                $pesan_en = "SELECT * FROM pesan WHERE bahasa_pesan = 'en' ORDER BY id_pesan DESC";
                 $hasil_pesan_en = mysqli_query($koneksi, $pesan_en);
                 if (!$hasil_pesan_en) {
                   echo "ERROR";
@@ -75,7 +75,6 @@
                     <td class="align-middle"><?php echo $row_pesan_en['subjek_pesan']; ?></td>
                     <td class="align-middle"><?php echo $row_pesan_en['pesan']; ?></td>
                     <td class="align-middle">
-                      <a href="fungsi/balas-pesan.php?id=<?php echo $row_pesan_en['id_pesan']; ?>" class="btn btn-link">Ubah</a>
                       <a href="fungsi/delete/delete-pesan.php?id=<?php echo $row_pesan_en['id_pesan']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
@@ -86,13 +85,12 @@
                 </tbody>
               </table>
             </div>
-            <div class="tab-content">
             <div id="pesan-id" class="container tab-pane fade"><br>
 
               <?php 
                 include 'fungsi/koneksi.php';
 
-                $pesan_id = "SELECT * FROM pesan WHERE bahasa_pesan = 'id'";
+                $pesan_id = "SELECT * FROM pesan WHERE bahasa_pesan = 'id' ORDER BY id_pesan DESC";
                 $hasil_pesan_id = mysqli_query($koneksi, $pesan_id);
                 if (!$hasil_pesan_id) {
                   echo "ERROR";
@@ -124,7 +122,6 @@
                     <td class="align-middle"><?php echo $row_pesan_id['subjek_pesan']; ?></td>
                     <td class="align-middle"><?php echo $row_pesan_id['pesan']; ?></td>
                     <td class="align-middle">
-                      <a href="fungsi/balas-pesan.php?id=<?php echo $row_pesan_id['id_pesan']; ?>" class="btn btn-link">Ubah</a>
                       <a href="fungsi/delete/delete-pesan.php?id=<?php echo $row_pesan_id['id_pesan']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
@@ -135,13 +132,12 @@
                 </tbody>
               </table>
             </div>
-            <div class="tab-content">
             <div id="pesan-cn" class="container tab-pane fade"><br>
 
               <?php 
                 include 'fungsi/koneksi.php';
 
-                $pesan_cn = "SELECT * FROM pesan WHERE bahasa_pesan = 'cn'";
+                $pesan_cn = "SELECT * FROM pesan WHERE bahasa_pesan = 'cn' ORDER BY id_pesan DESC";
                 $hasil_pesan_cn = mysqli_query($koneksi, $pesan_cn);
                 if (!$hasil_pesan_cn) {
                   echo "ERROR";
@@ -173,7 +169,6 @@
                     <td class="align-middle"><?php echo $row_pesan_cn['subjek_pesan']; ?></td>
                     <td class="align-middle"><?php echo $row_pesan_cn['pesan']; ?></td>
                     <td class="align-middle">
-                      <a href="fungsi/balas-pesan.php?id=<?php echo $row_pesan_cn['id_pesan']; ?>" class="btn btn-link">Ubah</a>
                       <a href="fungsi/delete/delete-pesan.php?id=<?php echo $row_pesan_cn['id_pesan']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>

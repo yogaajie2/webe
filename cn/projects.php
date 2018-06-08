@@ -2,7 +2,13 @@
 <html lang="en">
 
   <?php include ('../fungsi/koneksi.php'); ?>
-  <?php include ('head.html'); ?>
+
+  <head>
+
+    <?php include ('head.html'); ?>
+
+    <title>Proyek | Webe Piles</title>
+  </head>
 
   <body>
     <div class="container-fluid sticky-top menu">
@@ -25,7 +31,7 @@
         <div class="row my-5">
 
             <?php
-                $proyek = "SELECT * FROM proyek WHERE bahasa_proyek = 'cn'";
+                $proyek = "SELECT * FROM proyek WHERE bahasa_proyek = 'cn' ORDER BY id_proyek DESC";
                 $hasil_proyek = mysqli_query($koneksi, $proyek);
 
                 $i = 0;

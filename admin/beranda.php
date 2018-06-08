@@ -311,7 +311,7 @@
           <?php 
             include 'fungsi/koneksi.php';
 
-            $client = "SELECT * FROM client";
+            $client = "SELECT * FROM client ORDER BY id_client DESC";
             $hasil_client = mysqli_query($koneksi, $client);
             if (!$hasil_client) {
               echo "ERROR";
@@ -375,7 +375,7 @@
               <?php 
                 include 'fungsi/koneksi.php';
 
-                $testimonial_en = "SELECT * FROM testimonial WHERE bahasa_testimonial = 'en'";
+                $testimonial_en = "SELECT * FROM testimonial WHERE bahasa_testimonial = 'en' ORDER BY id_testimonial DESC";
                 $hasil_testimonial_en = mysqli_query($koneksi, $testimonial_en);
                 if (!$hasil_testimonial_en) {
                   echo "ERROR";
@@ -415,7 +415,7 @@
               <?php 
                 include 'fungsi/koneksi.php';
 
-                $testimonial_id = "SELECT * FROM testimonial WHERE bahasa_testimonial = 'id'";
+                $testimonial_id = "SELECT * FROM testimonial WHERE bahasa_testimonial = 'id' ORDER BY id_testimonial DESC";
                 $hasil_testimonial_id = mysqli_query($koneksi, $testimonial_id);
                 if (!$hasil_testimonial_id) {
                   echo "ERROR";
@@ -455,7 +455,7 @@
               <?php 
                 include 'fungsi/koneksi.php';
 
-                $testimonial_cn = "SELECT * FROM testimonial WHERE bahasa_testimonial = 'cn'";
+                $testimonial_cn = "SELECT * FROM testimonial WHERE bahasa_testimonial = 'cn' ORDER BY id_testimonial DESC";
                 $hasil_testimonial_cn = mysqli_query($koneksi, $testimonial_cn);
                 if (!$hasil_testimonial_cn) {
                   echo "ERROR";

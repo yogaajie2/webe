@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.7
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 07, 2018 at 10:13 AM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 7.1.11
+-- Generation Time: Jun 08, 2018 at 10:49 PM
+-- Server version: 10.1.30-MariaDB
+-- PHP Version: 7.2.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -310,7 +310,10 @@ CREATE TABLE `testimonial` (
 INSERT INTO `testimonial` (`id_testimonial`, `isi_testimonial`, `sumber_testimonial`, `bahasa_testimonial`) VALUES
 (1, '<p>edited [en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'edited John Doe', 'en'),
 (2, '[id] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.', 'John Doe', 'id'),
-(3, '[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.', 'John Doe', 'cn');
+(3, '[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.', 'John Doe', 'cn'),
+(4, '<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'goy', 'en'),
+(5, '<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'goy', 'id'),
+(6, '<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'goy', 'cn');
 
 -- --------------------------------------------------------
 
@@ -466,7 +469,7 @@ ALTER TABLE `tentang_kami`
 -- AUTO_INCREMENT for table `testimonial`
 --
 ALTER TABLE `testimonial`
-  MODIFY `id_testimonial` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_testimonial` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `users`

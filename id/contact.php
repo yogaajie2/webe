@@ -2,7 +2,13 @@
 <html lang="en">
 
   <?php include ('../fungsi/koneksi.php'); ?>
-  <?php include ('head.html'); ?>
+
+  <head>
+
+    <?php include ('head.html'); ?>
+
+    <title>Kontak | Webe Piles</title>
+  </head>
 
   <body>
     <div class="container-fluid sticky-top menu">
@@ -74,7 +80,7 @@
 
                 </div>
                 <div class="row">
-                    <img class="img-fluid" src="img/contents/map.png">
+                    <img class="img-fluid" src="../img/contents/map.png">
                 </div>
             </div>
         </div>

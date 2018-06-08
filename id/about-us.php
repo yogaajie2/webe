@@ -2,8 +2,13 @@
 <html lang="en">
 
   <?php include ('../fungsi/koneksi.php'); ?>
-  <?php include ('head.html'); ?>
 
+  <head>
+
+    <?php include ('head.html'); ?>
+
+    <title>Tentang Kami | Webe Piles</title>
+  </head>
   <body>
     <div class="container-fluid sticky-top menu">
         <div class="container">
@@ -32,7 +37,7 @@
             ?>
 
             <div class="col-md-6">
-                <img class="img-fluid" style="width: 100%; height: 320px;" src="<?php echo $row_tentang_kami['gambar_tentang_kami']; ?>">
+                <img class="img-fluid" style="width: 100%; height: 320px;" src="../<?php echo $row_tentang_kami['gambar_tentang_kami']; ?>">
                 <h3 class="mt-3" style="text-transform: uppercase;"><?php echo $row_tentang_kami['judul_tentang_kami']; ?></h3>
                 <p><?php echo $row_tentang_kami['isi_tentang_kami']; ?></p>
             </div>
@@ -41,7 +46,7 @@
 
             <!--
             <div class="col-md-6">
-                <img class="img-fluid" style="width: 100%; height: 320px;" src="img/contents/contents-2.jpg">
+                <img class="img-fluid" style="width: 100%; height: 320px;" src="../img/contents/contents-2.jpg">
                 <h3 class="mt-3" style="text-transform: uppercase;">What We Do</h3>
                 <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -59,7 +64,7 @@
             ?>
 
             <div class="col-md-4">
-                <img class="img-fluid" src="<?php echo $row_jajaran_direksi['gambar_jajaran_direksi']; ?>">
+                <img class="img-fluid" src="../<?php echo $row_jajaran_direksi['gambar_jajaran_direksi']; ?>">
                 <h4 class="mt-3"><?php echo $row_jajaran_direksi['nama_jajaran_direksi']; ?></h4>
                 <p style="font-style: italic;"><?php echo $row_jajaran_direksi['jabatan_jajaran_direksi']; ?></p>
                 <p><?php echo $row_jajaran_direksi['tentang_jajaran_direksi']; ?></p>
@@ -69,13 +74,13 @@
 
             <!--
             <div class="col-md-4">
-                <img class="img-fluid" src="img/contents/profile.png">
+                <img class="img-fluid" src="../img/contents/profile.png">
                 <h4 class="mt-3">Hasan Agus</h4>
                 <p style="font-style: italic;">Vice Director</p>
                 <p>Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
             </div>
             <div class="col-md-4">
-                <img class="img-fluid" src="img/contents/profile.png">
+                <img class="img-fluid" src="../img/contents/profile.png">
                 <h4 class="mt-3">Priscilla Elsa</h4>
                 <p style="font-style: italic;">Secretary</p>
                 <p>Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>

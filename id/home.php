@@ -1,10 +1,14 @@
 <!doctype html>
 <html lang="en">
 
-  <?php
-  	include ('../fungsi/koneksi.php');
-  	include ('head.html');
-  ?>
+  <?php include ('../fungsi/koneksi.php'); ?>
+
+  <head>
+
+  	<?php include ('head.html'); ?>
+
+  	<title>Beranda | Webe Piles</title>
+  </head>
 
   <body>
   	<div class="container-fluid sticky-top menu">
@@ -57,7 +61,7 @@
 			?>
 
 			<div class="col-md-4">
-			  <img class="img-fluid main-features mb-3" src="<?php echo $row_fitur['gambar_fitur']; ?>">
+			  <img class="img-fluid main-features mb-3" src="../<?php echo $row_fitur['gambar_fitur']; ?>">
 			    <h4><?php echo $row_fitur['nama_fitur']; ?></h4>
 			    <p><?php echo $row_fitur['deskripsi_fitur']; ?></p>
 			    <a href="#">Baca Lebih</a>
@@ -66,13 +70,13 @@
 			<?php } ?>
 			<!--
 			<div class="col-md-4">
-			  <img class="img-fluid main-features mb-3" src="img/features/feature-2.jpeg">
+			  <img class="img-fluid main-features mb-3" src="../img/features/feature-2.jpeg">
 			    <h4>Fitur 2</h4>
 			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
 			    <a href="#">Baca Lebih</a>	
 			</div>
 			<div class="col-md-4">
-			  <img class="img-fluid main-features mb-3" src="img/features/feature-3.jpeg">
+			  <img class="img-fluid main-features mb-3" src="../img/features/feature-3.jpeg">
 			    <h4>Fitur 3</h4>
 			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
 			    <a href="#">Baca Lebih</a>	
@@ -88,13 +92,13 @@
 		
 		<div class="row my-5">
 			<div class="col-4 d-flex align-items-center justify-content-center">
-				<img class="img-fluid" src="img/icons/icon-1.png" style="width: 70px;">
+				<img class="img-fluid" src="../img/icons/icon-1.png" style="width: 70px;">
 			</div>
 			<div class="col-4 d-flex align-items-center justify-content-center">
-				<img class="img-fluid" src="img/icons/icon-2.png" style="width: 70px;">
+				<img class="img-fluid" src="../img/icons/icon-2.png" style="width: 70px;">
 			</div>
 			<div class="col-4 d-flex align-items-center justify-content-center">
-				<img class="img-fluid" src="img/icons/icon-3.png" style="width: 70px;">
+				<img class="img-fluid" src="../img/icons/icon-3.png" style="width: 70px;">
 			</div>
 		</div>
 		<div class="row mb-5">
@@ -143,27 +147,35 @@
 			<div class="row mt-5">
 				
 				<?php
-	                $proyek = "SELECT * FROM proyek LIMIT 4";
+	                $proyek = "SELECT * FROM proyek WHERE bahasa_proyek = 'id' ORDER BY id_proyek DESC LIMIT 4";
 	                $hasil_proyek = mysqli_query($koneksi, $proyek);
 
 	                while ($row_proyek = mysqli_fetch_array($hasil_proyek, MYSQLI_ASSOC)) {
 	            ?>
 
 				<div class="col-md-3">
-					<img class="img-fluid projects" src="<?php echo $row_proyek['gambar_proyek']; ?>">
+					<div class="container position-relative d-inline-block p-0">
+						<img class="img-fluid projects" src="../<?php echo $row_proyek['gambar_proyek']; ?>">
+						<div class="container position-absolute project-overlay p-0">
+	                        <div class="position-absolute project-overlay-text">
+	                            <h3><?php echo $row_proyek['nama_proyek']; ?></h3>
+	                            <p><?php echo $row_proyek['lokasi_proyek']; ?></p>
+	                        </div>
+	                    </div>
+					</div>
 				</div>
 
 				<?php } ?>
 
 			<!--
 				<div class="col-md-3">
-					<img class="img-fluid projects" src="img/projects/projects-2.jpeg">
+					<img class="img-fluid projects" src="../img/projects/projects-2.jpeg">
 				</div>
 				<div class="col-md-3">
-					<img class="img-fluid projects" src="img/projects/projects-3.jpeg">
+					<img class="img-fluid projects" src="../img/projects/projects-3.jpeg">
 				</div>
 				<div class="col-md-3">
-					<img class="img-fluid projects" src="img/projects/projects-4.jpeg">
+					<img class="img-fluid projects" src="../img/projects/projects-4.jpeg">
 				</div>
 			-->
 			</div>
@@ -183,7 +195,7 @@
 							<tr>
 
 								<?php
-									$client = "SELECT * FROM client";
+									$client = "SELECT * FROM client ORDER BY id_client DESC";
 									$hasil_client = mysqli_query($koneksi, $client);
 
 									$i = 0;
