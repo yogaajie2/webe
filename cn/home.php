@@ -22,13 +22,19 @@
     	<div id="main-carousel" class="carousel slide" data-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active carousel-slide-1">
-		    		<div class="container h-100 d-flex align-items-center">
-						<h1 class="display-3 text-uppercase mx-auto top-slogan" style="text-align: center;">MEMBANGUN MASA DEPAN</h1>
+		    		<div class="container h-50 d-flex align-items-center">
+						<h1 class="display-3 text-uppercase mx-auto top-slogan" style="text-align: center;">Membangun Masa Depan</h1>
+					</div>
+					<div class="container h-50 d-flex align-items-center">
+						<a class="btn btn-lg jumbotron-button mx-auto" href="proyek.php">Lihat Pekerjaan Kami >></a>
 					</div>
 		    	</div>
 			    <div class="carousel-item carousel-slide-2">
-		    		<div class="container h-100 d-flex align-items-center">
-						<h1 class="display-3 text-uppercase mx-auto top-slogan" style="text-align: center;">MENJADI YANG TERBAIK</h1>
+		    		<div class="container h-50 d-flex align-items-center">
+						<h1 class="display-3 text-uppercase mx-auto top-slogan" style="text-align: center;">Menjadi yang Terbaik</h1>
+					</div>
+					<div class="container h-50 d-flex align-items-center">
+						<a class="btn btn-lg jumbotron-button mx-auto" href="services.php">Layanan Kami >></a>
 					</div>
 		    	</div>
 		  	</div>
@@ -63,7 +69,6 @@
 			  <img class="img-fluid main-features mb-3" src="../<?php echo $row_fitur['gambar_fitur']; ?>">
 			    <h4><?php echo $row_fitur['nama_fitur']; ?></h4>
 			    <p><?php echo $row_fitur['deskripsi_fitur']; ?></p>
-			    <a href="#">Baca Lebih</a>
 			</div>
 
 			<?php } ?>
@@ -152,10 +157,10 @@
 	                while ($row_proyek = mysqli_fetch_array($hasil_proyek, MYSQLI_ASSOC)) {
 	            ?>
 
-				<div class="col-md-3">
-					<div class="container position-relative d-inline-block p-0">
-						<img class="img-fluid projects" src="../<?php echo $row_proyek['gambar_proyek']; ?>">
-						<div class="container position-absolute project-overlay p-0">
+				<div class="col-md-3 py-3">
+					<div class="container position-relative d-inline-block">
+						<img class="img-fluid" src="../<?php echo $row_proyek['gambar_proyek']; ?>">
+						<div class="container position-absolute project-overlay">
 	                        <div class="position-absolute project-overlay-text">
 	                            <h3><?php echo $row_proyek['nama_proyek']; ?></h3>
 	                            <p><?php echo $row_proyek['lokasi_proyek']; ?></p>
@@ -194,7 +199,7 @@
 							<tr>
 
 								<?php
-									$client = "SELECT * FROM client ORDER BY id_proyek DESC";
+									$client = "SELECT * FROM client ORDER BY id_client DESC";
 									$hasil_client = mysqli_query($koneksi, $client);
 
 									$i = 0;
@@ -242,7 +247,7 @@
 				<h3 class="text-uppercase">Testimonial</h3>
 
 				<?php
-					$testimonial = "SELECT * FROM testimonial WHERE bahasa_testimonial = 'cn'";
+					$testimonial = "SELECT * FROM testimonial WHERE bahasa_testimonial = 'cn' ORDER BY id_testimonial DESC LIMIT 2";
 					$hasil_testimonial = mysqli_query($koneksi, $testimonial);
 
 					while ($row_testimonial = mysqli_fetch_array($hasil_testimonial, MYSQLI_ASSOC)) {
@@ -259,7 +264,7 @@
 		</div>
     </div>
 
-    <?php include ('footer.html') ?>
+    <?php include ('footer.php') ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

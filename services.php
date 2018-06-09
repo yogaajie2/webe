@@ -90,7 +90,7 @@
         -->        
     </div>
 
-    <?php include ('footer.html') ?>
+    <?php include ('footer.php') ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

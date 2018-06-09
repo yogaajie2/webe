@@ -1,11 +1,12 @@
+<?php include ('fungsi/koneksi.php'); ?>
+
 <footer class="container-fluid py-3 mt-5">
 	<div class="container">
 		<div class="row mt-5">
 			<div class="col-md-3">
 				<p class="text-uppercase font-weight-bold">About Company</p>
 				<br>
-				<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
-				<p>At eam noluisse corrumpit, postea animal intellegam et nam.</p>
+				<p>PT. WEBE PILES begins with bore pile foundation work using the wash boring system, but continues to grow in line with technological developments. PT. WEBE PILES with competent experience expands on different foundation work systems such as dry boring and diaphragm wall.</p>
 			</div>
 			<div class="col-md-3">
 				<p class="text-uppercase font-weight-bold">Company</p>
@@ -13,27 +14,38 @@
 				<div class="row">
 					<div class="col-md-6">
 						<a href="index.php">Home</a><br>
-						<a href="tentang-kami.php">About Us</a>
+						<a href="about-us.php">About Us</a>
 					</div>
 					<div class="col-md-6">
-						<a href="layanan.php">Services</a><br>
-						<a href="proyek.php">Projects</a>
+						<a href="services.php">Services</a><br>
+						<a href="projects.php">Projects</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
 				<p class="text-uppercase font-weight-bold">Contact</p>
 				<br>
+
+				<?php
+                    $kontak = "SELECT * FROM kontak";
+                    $hasil_kontak = mysqli_query($koneksi, $kontak);
+
+                    while ($row_kontak = mysqli_fetch_array($hasil_kontak, MYSQLI_ASSOC)) {
+                ?>
+
 				<div class="row">
 					<div class="col">
 						<p>
 					        <strong>PT. Webe Piles</strong><br>
-					        Ruko Golden 8 Blok I No.8, Pakulonan Barat, Tangerang, Banten 15810
+					        <?php echo $row_kontak['alamat']; ?>
 				        </p>
-				        <p class="font-weight-bold">(021) 29238895</p>
-				        <a href="#">webe_piles@yahoo.com</a>
+				        <p class="font-weight-bold"><?php echo $row_kontak['telepon']; ?></p>
+				        <a href="#"><?php echo $row_kontak['email']; ?></a>
 					</div>
 				</div>
+
+				<?php } ?>
+
 			</div>
 			<div class="col-md-3">
 				<p class="text-uppercase font-weight-bold">Office Hours</p>

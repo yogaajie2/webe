@@ -30,7 +30,7 @@
         </div>
         <div class="row mt-5">
             <div class="col-md-6">
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>Start building your dream project with us. Have other questions? Please fill this form below and we will contact you shortly.</p>
                 <form action="pesan.php" method="POST">
                     <div class="form-group">
                         <input type="text" class="form-control" name="nama" placeholder="Name">
@@ -86,7 +86,7 @@
         </div>
     </div>
 
-    <?php include ('footer.html') ?>
+    <?php include ('footer.php') ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

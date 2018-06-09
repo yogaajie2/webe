@@ -1,11 +1,12 @@
+<?php include ('../fungsi/koneksi.php'); ?>
+
 <footer class="container-fluid py-3 mt-5">
 	<div class="container">
 		<div class="row mt-5">
 			<div class="col-md-3">
 				<p class="text-uppercase font-weight-bold">Tentang Perusahaan</p>
 				<br>
-				<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
-				<p>At eam noluisse corrumpit, postea animal intellegam et nam.</p>
+				<p>Kegiatan usaha PT. WEBE PILES diawali dengan pekerjaan pondasi <i>bore pile </i>sistem<i> wash boring</i>, namun terus berkembang sejalan dengan perkembangan teknologi. PT. WEBE PILES dengan pengalaman yang kompeten memperluas sistem kerja pondasi yang berbeda seperti <i>dry boring</i> maupun <i>diaphragm wall</i>.</p>
 			</div>
 			<div class="col-md-3">
 				<p class="text-uppercase font-weight-bold">Perusahaan</p>
@@ -13,27 +14,38 @@
 				<div class="row">
 					<div class="col-6">
 						<a href="index.php">Beranda</a>
-						<a href="tentang-kami.php">Tentang Kami</a>
+						<a href="about-us.php">Tentang Kami</a>
 					</div>
 					<div class="col-6">
-						<a href="layanan.php">Layanan</a>
-						<a href="proyek.php">Proyek</a>
+						<a href="services.php">Layanan</a>
+						<a href="projects.php">Proyek</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
 				<p class="text-uppercase font-weight-bold">Kontak</p>
 				<br>
+
+				<?php
+                    $kontak = "SELECT * FROM kontak";
+                    $hasil_kontak = mysqli_query($koneksi, $kontak);
+
+                    while ($row_kontak = mysqli_fetch_array($hasil_kontak, MYSQLI_ASSOC)) {
+                ?>
+
 				<div class="row">
 					<div class="col">
 						<p>
 					        <strong>PT. Webe Piles</strong><br>
-					        Ruko Golden 8 Blok I No.8, Pakulonan Barat, Tangerang, Banten 15810
+					        <?php echo $row_kontak['alamat']; ?>
 				        </p>
-				        <p class="font-weight-bold">(021) 29238895</p>
-				        <a href="#">webe_piles@yahoo.com</a>
+				        <p class="font-weight-bold"><?php echo $row_kontak['telepon']; ?></p>
+				        <a href="#"><?php echo $row_kontak['email']; ?></a>
 					</div>
 				</div>
+
+				<?php } ?>
+
 			</div>
 			<div class="col-md-3">
 				<p class="text-uppercase font-weight-bold">Jam Kerja</p>

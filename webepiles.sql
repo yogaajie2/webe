@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 08, 2018 at 10:49 PM
+-- Generation Time: Jun 09, 2018 at 06:34 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 7.2.2
 
@@ -38,12 +38,12 @@ CREATE TABLE `client` (
 --
 
 INSERT INTO `client` (`id_client`, `nama_client`) VALUES
-(2, 'Client 2'),
-(3, 'Client Y'),
-(4, 'edited Client Z'),
-(5, 'Client 5'),
-(6, 'Client X'),
-(8, 'Client');
+(2, 'Client F'),
+(3, 'Client E'),
+(4, 'Client D'),
+(5, 'Client C'),
+(6, 'Client B'),
+(8, 'Client A');
 
 -- --------------------------------------------------------
 
@@ -53,7 +53,7 @@ INSERT INTO `client` (`id_client`, `nama_client`) VALUES
 
 CREATE TABLE `fitur` (
   `id_fitur` int(11) NOT NULL,
-  `nama_fitur` varchar(20) NOT NULL,
+  `nama_fitur` varchar(50) NOT NULL,
   `deskripsi_fitur` text NOT NULL,
   `gambar_fitur` varchar(200) NOT NULL,
   `bahasa_fitur` varchar(2) DEFAULT NULL
@@ -64,12 +64,12 @@ CREATE TABLE `fitur` (
 --
 
 INSERT INTO `fitur` (`id_fitur`, `nama_fitur`, `deskripsi_fitur`, `gambar_fitur`, `bahasa_fitur`) VALUES
-(1, 'edited Fitur 1 en', '<p>edited [en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. <i>Ne eum stet melius</i>, recteque persecuti cum ex.</p>', 'img/features/pexels-photo-95687.jpeg', 'en'),
-(2, 'Fitur 2 en', '<p>[en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>', 'img/features/feature-2.jpeg', 'en'),
-(3, 'Fitur 3 en', '<p>[en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>', 'img/features/feature-3.jpeg', 'en'),
-(4, 'Fitur 1 id', '<p>[id] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>', 'img/features/pexels-photo-95687.jpeg', 'id'),
-(5, 'Fitur 2 id', '[id] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-2.jpeg', 'id'),
-(6, 'Fitur 3 id', '[id] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-3.jpeg', 'id'),
+(1, 'Commitment to Our Customers', '<p>Trust and customer satisfaction are our virtues. Therefore we are always committed to protecting them both in every project.&nbsp;</p>', 'img/features/pexels-photo-95687.jpeg', 'en'),
+(2, 'Competitive Prices', '<p>We always try to offer the best price to our customers without reducing the quality of our work and services we provide by optimizing every available resource.</p>', 'img/features/feature-2.jpeg', 'en'),
+(3, 'Satisfactory Performance', '<p>In every job we are expected to get the best results, Therefore we always prioritize good performance results, both in teamwork and practices to achieve full customer satisfaction and trust.</p>', 'img/features/feature-3.jpeg', 'en'),
+(4, 'Komitmen Kepada Pelanggan', '<p>Kepercayaan dan kepuasan pelanggan adalah keutamaan kami. Karena itu kami selalu berkomitmen menjaga kedua hal tersebut dalam setiap pekerjaan kami.</p>', 'img/features/pexels-photo-95687.jpeg', 'id'),
+(5, 'Harga Bersaing', '<p>Kami selalu mencoba menawarkan harga yang terbaik kepada para pelanggan kami tanpa mengurangi kualitas pekerjaan dan layanan yang kami berikan dengan memaksimalkan setiap sumber daya yang tersedia.&nbsp;</p>', 'img/features/feature-2.jpeg', 'id'),
+(6, 'Kinerja yang Memuaskan', '<p>Dalam melakukan pekerjaan tentu hasil yang diharapkan adalah yang terbaik, untuk itu kami selalu mengutamakan hasil kinerja yang baik, baik dalam kerja sama tim maupun dalam cara bekerja demi mencapai kepuasan &nbsp;dan kepercayaan penuh dari pelanggan kami.</p>', 'img/features/feature-3.jpeg', 'id'),
 (7, 'Fitur 1 cn', '<p>[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>', 'img/features/pexels-photo-95687.jpeg', 'cn'),
 (8, 'Fitur 2 cn', '[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.', 'img/features/feature-2.jpeg', 'cn'),
 (9, 'Fitur 3 cn', '<p>[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>', 'img/features/feature-3.jpeg', 'cn');
@@ -113,7 +113,7 @@ INSERT INTO `jajaran_direksi` (`id_jajaran_direksi`, `nama_jajaran_direksi`, `ja
 CREATE TABLE `kontak` (
   `id_kontak` int(11) NOT NULL,
   `alamat` text NOT NULL,
-  `telepon` varchar(20) NOT NULL,
+  `telepon` varchar(100) NOT NULL,
   `email` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -122,7 +122,7 @@ CREATE TABLE `kontak` (
 --
 
 INSERT INTO `kontak` (`id_kontak`, `alamat`, `telepon`, `email`) VALUES
-(1, '<p>edited Ruko Golden 8 Blok I No.8, Pakulonan Barat, Tangerang, Banten 15810</p>', '(021) 29238895', 'webe_piles@yahoo.com');
+(1, '<p>Jl. Ki Hajar Dewantara, Ruko Golden 8 Blok I No.8, Pakulonan Barat, Tangerang, Banten 15810</p>', '021-29238895/96, 021-29238781, +628111555215', 'webe_piles@yahoo.com');
 
 -- --------------------------------------------------------
 
@@ -143,24 +143,30 @@ CREATE TABLE `layanan` (
 --
 
 INSERT INTO `layanan` (`id_layanan`, `nama_layanan`, `deskripsi_layanan`, `gambar_layanan`, `bahasa_layanan`) VALUES
-(1, 'edited Driven Pile [en]', '<p>edited [en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/driven-pile - Copy.jpg', 'en'),
-(2, 'Spun Pile [en]', '<p>[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/spun-pile.jpg', 'en'),
-(3, 'Square Pile [en]', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/square-pile.jpg', 'en'),
-(4, 'Pipe Pile [en]', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/pipe-pile.jpg', 'en'),
-(5, 'Bored Pile [en]', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/bored-pile.jpg', 'en'),
-(6, 'Barrette Pile [en]', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/barrette-pile.jpg', 'en'),
-(7, 'Driven Pile [id]', '<p>[id] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/driven-pile - Copy.jpg', 'id'),
-(8, 'Spun Pile [id]', '[id] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/spun-pile.jpg', 'id'),
-(9, 'Square Pile [id]', '[id] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/square-pile.jpg', 'id'),
-(10, 'Pipe Pile [id]', '[id] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/pipe-pile.jpg', 'id'),
-(11, 'Bored Pile [id]', '[id] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/bored-pile.jpg', 'id'),
-(12, 'Barrette Pile [id]', '[id] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/barrette-pile.jpg', 'id'),
-(13, 'Driven Pile [cn]', '<p>[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/driven-pile - Copy.jpg', 'cn'),
-(14, 'Spun Pile [cn]', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/spun-pile.jpg', 'cn'),
-(15, 'Square Pile [cn]', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/square-pile.jpg', 'cn'),
-(16, 'Pipe Pile [cn]', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/pipe-pile.jpg', 'cn'),
-(17, 'Bored Pile [cn]', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/bored-pile.jpg', 'cn'),
-(18, 'Barrette Pile [cn]', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.', 'img/services/barrette-pile.jpg', 'cn');
+(1, 'Dry Boring', '                <p>The spiral bore pile used to drill the soil is rotated until the drill bit is filled with soil then pulled and removed. The process repeated again until the desired depth is reached. If the soil is too dry sometimes a little water is required to soften the soil. This process can only be done until it reaches ground water level.</p>              ', 'img/services/IMG_20140305_150422.jpg', 'en'),
+(2, 'Drop Hammer', '<p>Drop hammer is a fall hammer consisting of ballast blocks dropped from above.</p><p>The way a drop hammer works is a hammer pulled up with a cable and a hoop until it reaches a certain fall height, then the hammer falls freely over the head of the pile. To avoid damage on the pile a cap (shock absorber) is often used on top of the pole. This cap is usually made out of wood.</p>', 'img/services/IMG-20151023-WA0037.jpg', 'en'),
+(3, 'Jack in Pile', '<p>Jack in pile is a pile foundation system whose implementation is it is pressed into the ground by using a counterweight-loaded hydraulic jack so as not to cause vibration and direct push force of the jack and can be read through the manometer so that the compression force of the pole can be known every time it reaches a certain depth. The mobilization of this tool is quite easy and in this method it is not possible to crack the head of the pole as in the piling system and also necking like in the bore-pile system.</p>', 'img/services/IMG-20140926-WA0004.jpg', 'en'),
+(4, 'Diaphragm Wall', '<p>Diaphragm Wall is a retaining wall and also used for basement floor wall in building structure that has underground floors. The process is done before doing excavation by drilling, iron installation and then ending with casting. After the Diaphragm Wall structure reaches sufficient age and strength then it can be continued with the excavation. This method is an alternative replacement for methods used to hold the ground such as piles, plaster, and others.</p>', 'img/services/cor2.jpg', 'en'),
+(5, 'Bored Pile', '<p>Bored pile is a pile foundation whose installation is done by drilling the ground at the beginning of the process. Bored pile then mounted into the ground by drilling the ground first, then filled with reinforcement and casted concrete. These poles are commonly used on stable and rigid soil, making it possible to form a stable hole with a drill tool. If the soil contains water, an iron pipe is required to hold the hole wall and the pipe is pulled up at the time of concrete casting. On hard ground or soft rocks, the base of the pole can be raised to increase the bearing resistance of the pole end.</p>', 'img/services/bored-pile.jpg', 'en'),
+(6, 'Ground Anchor', '<p>A ground anchor is a load transfer system designed to transfer the forces applied to it to a competent stratum. An anchor is said to be temporary if it has a lifespan of under two years and permanent if the lifespan is over two years.</p>', 'img/services/IMG-20141011-WA0009.jpg', 'en'),
+(7, 'Dry Boring', '<p>Mata bore pile spiral yang digunakan untuk mengebor tanah diputar sampai mata bor penuh terisi tanah kemudian diangkat lagi dan dibuang, lalu diulang kembali sampai kedalaman yang diinginkan tercapai. Jika tanah terlalu kering terkadang diperlukan sedikit air untuk melunakkan tanah tersebut. Hanya bisa dilakukan sampai mencapai level air tanah.</p>', 'img/services/IMG_20140305_150422.jpg', 'id'),
+(8, 'Drop Hammer', '<p><i>Drop hammer</i> merupakan pemukul jatuh yang terdiri dari balok pemberat yang dijatuhkan dari atas.</p><p>Cara kerja <i>drop hammer</i> adalah penumbuk <i>(hammer)</i> ditarik ke atas dengan kabel dan kerekan sampai mencapai tinggi jatuh tertentu, kemudian penumbuk <i>(hammer)</i> tersebut jatuh bebas menimpa kepala tiang pancang . Untuk menghindari kerusakan pada tiang pancang maka pada kepala tiang dipasang topi/<i>cap</i> <i>(shock absorber)</i>, cap ini biasanya terbuat dari kayu.</p>', 'img/services/IMG-20151023-WA0037.jpg', 'id'),
+(9, 'Jack in Pile', '<p><i>Jack in pile</i> adalah suatu sistem pemancangan pondasi tiang yang pelaksanaannya ditekan masuk ke dalam tanah dengan menggunakan dongkrak hidraulis yang diberi beban <i>counterweight</i> sehingga tidak menimbulkan getaran dan gaya tekan dongkrak lansung dan dapat dibaca melalui manometer sehingga gaya tekan tiang dapat diketahui tiap mencapai kedalaman tertentu.</p><p>Mobilisasi alat ini cukup mudah dan pada <i>jack in pile</i> tidak mungkin terjadi keretakan pada kepala tiang seperti pada sistem pemancangan dan juga tidak mudah terjadi <i>necking</i> seperi pada sistem <i>bore-pile.</i></p>', 'img/services/IMG-20140926-WA0004.jpg', 'id'),
+(10, 'Diaphragm Wall', '<p><i>Diaphragm Wall</i> adalah dinding penahan tanah <i>(retaining wall)</i> sekaligus digunakan untuk dinding lantai <i>basement</i> pada struktur bangunan yang memiliki lantai bawah tanah, Pengerjaannya dilakukan sebelum melakukan pekerjaan galian tanah dengan cara melakukan pengeboran, pemasangan besi kemudian diakhiri dengan pengecoran. setelah struktur <i>Diaphragm Wall</i> mencukupi umur serta kekuatannya maka bisa dilanjutkan dengan pekerjaan galian tanah. Metode ini merupakan alternatif pengganti pekerjaan dinding yang digunakan untuk menahan tanah seperti tiang pancang, turap, trucuk bambu, dan lainnya.</p>', 'img/services/cor2.jpg', 'id'),
+(11, 'Bored Pile', '<p>Pondasi tiang bor <i>(bored pile)</i> adalah pondasi tiang yang pemasangannya dilakukan dengan mengebor tanah pada awal pengerjaannya. <i>Bored pile</i> dipasang ke dalam tanah dengan cara mengebor tanah terlebih dahulu, baru kemudian diisi tulangan dan dicor beton. Tiang ini biasanya dipakai pada tanah yang stabil dan kaku, sehingga memungkinkan untuk membentuk lubang yang stabil dengan alat bor. Jika tanah mengandung air, pipa besi dibutuhkan untuk menahan dinding lubang dan pipa ini ditarik ke atas pada waktu pengecoran beton. Pada tanah yang keras atau batuan lunak, dasar tiang dapat dibesarkan untuk menambah tahanan dukung ujung tiang.</p>', 'img/services/bored-pile.jpg', 'id'),
+(12, 'Ground Anchor', '<p><i>Ground Anchor</i> adalah sistem transfer beban yang dirancang untuk mentransfer gaya yang diterapkan ke lapisan yang kompeten. Sebuah <i>anchor</i> dikatakan bersifat sementara jika memiliki jangka waktu di bawah dua tahun dan permanen jika berusia lebih dari dua tahun.</p>', 'img/services/IMG-20141011-WA0009.jpg', 'id'),
+(13, 'Dry Boring', '<p>[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/IMG_20140305_150501.jpg', 'cn'),
+(14, 'Drop Hammer', '<p>[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/IMG-20151023-WA0037.jpg', 'cn'),
+(15, 'Jack in Pile', '<p>[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/IMG-20140926-WA0004.jpg', 'cn'),
+(16, 'Diaphragm Wall', '<p>[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/cor2.jpg', 'cn'),
+(17, 'Bored Pile', '<p>[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/bored-pile.jpg', 'cn'),
+(18, 'Ground Anchor', '<p>[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>', 'img/services/IMG-20141011-WA0009.jpg', 'cn'),
+(19, 'Vertical Drain', '<p><i>Vertical Drain</i>, juga dikenal sebagai <i>Wick Drain</i>, adalah salah satu teknik yang paling umum digunakan untuk membuat lapisan tanah lunak yang dapat dimampatkan dengan daya dukung rendah. <i>Vertical Drain </i>dapat mengurangi waktu penyelesaian secara substansial. <i>Vertical Drain</i> menghasilkan pengurangan proses konsolidasi dari puluhan tahun menjadi setengah tahun atau bahkan kurang. Metode ini juga akan meningkatkan stabilitas yang memungkinkan untuk menempatkan tanggul lebih cepat.</p>', 'img/services/IMG-20151011-WA0000.jpg', 'id'),
+(20, 'Precast Panel', '<p><i>Precast Panel</i> adalah produk konstruksi yang dihasilkan dari proses pengecoran beton dalam cetakan yang dapat digunakan kembali atau yang kemudian diawetkan, diangkut ke lokasi konstruksi dan diangkat ke tempatnya.</p><p>Menggunakan Precast Panel menawarkan banyak keuntungan potensial dibandingkan dengan <i>onsite casting</i>. Produksi <i>precast panel </i>dapat dilakukan di permukaan tanah, yang membantu keamanan di seluruh proyek. Ada proses kontrol yang lebih besar atas kualitas material dan pengerjaan di pabrik <i>precast</i> dibandingkan dengan lokasi konstruksi.</p>', 'img/services/IMG-20140926-WA0007.jpg', 'id'),
+(21, 'Vertical Drain', '<p>Vertical Drain, also known as Wick Drain, is one of the most common techniques used to create a compacted soft soil layer with low carrying capacity. Vertical Drain can reduce substantial completion time. Vertical Drain resulted in a reduction of the consolidation process from decades to half a year or even less. This method will also increase the stability that allows to place the embankments more quickly.</p>', 'img/services/IMG-20151011-WA0000.jpg', 'en'),
+(22, 'Precast Panel', '<p>Precast concrete is a construction product produced by casting concrete in a reusable mold or \"form\" which is then cured in a controlled environment, transported to the construction site and lifted into place (\"tilt up\").</p><p>Using a precast concrete system offers many potential advantages over onsite casting. Precast concrete production can performed on ground level, which helps with safety throughout a project. There is greater control over material quality and workmanship in a precast plant compared to a construction site.</p>', 'img/services/IMG-20140926-WA0007.jpg', 'en'),
+(23, 'Vertical Drain', '<p><i>Vertical Drain</i>, juga dikenal sebagai <i>Wick Drain</i>, adalah salah satu teknik yang paling umum digunakan untuk membuat lapisan tanah lunak yang dapat dimampatkan dengan daya dukung rendah. <i>Vertical Drain </i>dapat mengurangi waktu penyelesaian secara substansial. <i>Vertical Drain</i>menghasilkan pengurangan proses konsolidasi dari puluhan tahun menjadi setengah tahun atau bahkan kurang. Metode ini juga akan meningkatkan stabilitas yang memungkinkan untuk menempatkan tanggul lebih cepat</p>', 'img/services/IMG-20151011-WA0000.jpg', 'cn'),
+(24, 'Precast Panel', '<p><i>Precast Panel</i> adalah produk konstruksi yang dihasilkan dari proses pengecoran beton dalam cetakan yang dapat digunakan kembali atau yang kemudian diawetkan, diangkut ke lokasi konstruksi dan diangkat ke tempatnya.</p><p>Menggunakan Precast Panel menawarkan banyak keuntungan potensial dibandingkan dengan <i>onsite casting</i>. Produksi <i>precast panel </i>dapat dilakukan di permukaan tanah, yang membantu keamanan di seluruh proyek. Ada proses kontrol yang lebih besar atas kualitas material dan pengerjaan di pabrik <i>precast</i>dibandingkan dengan lokasi konstruksi.</p>', 'img/services/IMG-20140926-WA0007.jpg', 'cn');
 
 -- --------------------------------------------------------
 
@@ -179,12 +185,12 @@ CREATE TABLE `pekerjaan` (
 --
 
 INSERT INTO `pekerjaan` (`id_pekerjaan`, `nama_pekerjaan`, `bahasa_pekerjaan`) VALUES
-(1, 'Pekerjaan 1 [en]', 'en'),
-(2, 'Pekerjaan 2 [en]', 'en'),
-(3, 'Pekerjaan 3 [en]', 'en'),
-(4, 'edited Pekerjaan 1 [id]', 'id'),
-(5, 'Pekerjaan 2 [id]', 'id'),
-(6, 'Pekerjaan 3 [id]', 'id'),
+(1, 'Commercial Buildings', 'en'),
+(2, 'Residentials', 'en'),
+(3, 'Other Buildings', 'en'),
+(4, 'Bangunan Komersial', 'id'),
+(5, 'Perumahan', 'id'),
+(6, 'Bangunan Lainnya', 'id'),
 (7, 'Pekerjaan 1 [cn]', 'cn'),
 (8, 'Pekerjaan 2 [cn]', 'cn'),
 (9, 'Pekerjaan 3 [cn]', 'cn');
@@ -240,29 +246,28 @@ INSERT INTO `proyek` (`id_proyek`, `gambar_proyek`, `nama_proyek`, `lokasi_proye
 (3, 'img/projects/projects-3.jpeg', 'Project 3', 'Jakarta', 'en'),
 (4, 'img/projects/projects-4.jpeg', 'Project 4', 'Jakarta', 'en'),
 (5, 'img/projects/projects-5.jpeg', 'Project 5', 'Jakarta', 'en'),
-(6, 'img/projects/projects-6.jpeg', 'Project 6', 'Jakarta', 'en'),
-(7, 'img/projects/projects-7.jpeg', 'Project 7', 'Jakarta', 'en'),
-(8, 'img/projects/projects-8.jpeg', 'Project 8', 'Jakarta', 'en'),
-(9, 'img/projects/projects-9.jpg', 'Project 9', 'Jakarta', 'en'),
+(6, 'img/projects/IMG-20140926-WA0002.jpg', 'MRT Jakarta', 'Jakarta', 'en'),
+(7, 'img/projects/IMG-20151013-WA0009.jpg', 'Meruya Utama', 'Jakarta', 'en'),
+(8, 'img/projects/IMG-20151023-WA0037.jpg', 'Grand Dadap City', 'Tangerang', 'en'),
+(9, 'img/projects/IMG_20140305_150501.jpg', 'Grand Pakubuwono Apartment', 'Jakarta', 'en'),
 (10, 'img/projects/projects-1.jpeg', 'Proyek 1', 'Jakarta', 'id'),
 (11, 'img/projects/projects-2 - Copy.jpeg', 'Proyek 2', 'Jakarta', 'id'),
 (12, 'img/projects/projects-3.jpeg', 'Proyek 3', 'Jakarta', 'id'),
 (13, 'img/projects/projects-4.jpeg', 'Proyek 4', 'Jakarta', 'id'),
 (14, 'img/projects/projects-5.jpeg', 'Proyek 5', 'Jakarta', 'id'),
-(15, 'img/projects/projects-6.jpeg', 'Proyek 6', 'Jakarta', 'id'),
-(16, 'img/projects/projects-7.jpeg', 'Proyek 7', 'Jakarta', 'id'),
-(17, 'img/projects/projects-8.jpeg', 'Proyek 8', 'Jakarta', 'id'),
-(18, 'img/projects/projects-9.jpg', 'Proyek 9', 'Jakarta', 'id'),
+(15, 'img/projects/IMG-20140926-WA0002.jpg', 'MRT Jakarta', 'Jakarta', 'id'),
+(16, 'img/projects/IMG-20151013-WA0009.jpg', 'Meruya Utama', 'Jakarta', 'id'),
+(17, 'img/projects/IMG-20151023-WA0037.jpg', 'Grand Dadap City', 'Tangerang', 'id'),
+(18, 'img/projects/IMG_20140305_150501.jpg', 'Apartemen Grand Pakubuwono', 'Jakarta', 'id'),
 (19, 'img/projects/projects-1.jpeg', '[cn] Proyek 1', '[cn] Jakarta', 'cn'),
 (20, 'img/projects/projects-2 - Copy.jpeg', '[cn] Proyek 2', '[cn] Jakarta', 'cn'),
 (21, 'img/projects/projects-3.jpeg', '[cn] Proyek 3', '[cn] Jakarta', 'cn'),
 (22, 'img/projects/projects-4.jpeg', '[cn] Proyek 4', '[cn] Jakarta', 'cn'),
 (23, 'img/projects/projects-5.jpeg', '[cn] Proyek 5', '[cn] Jakarta', 'cn'),
-(24, 'img/projects/projects-6.jpeg', '[cn] Proyek 6', '[cn] Jakarta', 'cn'),
-(25, 'img/projects/projects-7.jpeg', '[cn] Proyek 7', '[cn] Jakarta', 'cn'),
-(26, 'img/projects/projects-8.jpeg', '[cn] Proyek 8', '[cn] Jakarta', 'cn'),
-(27, 'img/projects/projects-9.jpg', '[cn] Proyek 9', '[cn] Jakarta', 'cn'),
-(28, 'img/projects/Desert.jpg', 'Proyek WOOW', 'Digidaw', 'cn');
+(24, 'img/projects/IMG-20140926-WA0002.jpg', 'MRT Jakarta', 'Jakarta', 'cn'),
+(25, 'img/projects/IMG-20151013-WA0009.jpg', 'Meruya Utama', 'Jakarta', 'cn'),
+(26, 'img/projects/IMG-20151023-WA0037.jpg', 'Grand Dadap City', 'Jakarta', 'cn'),
+(27, 'img/projects/IMG_20140305_150501.jpg', 'Apartemen Grand Pakubuwono', 'Jakarta', 'cn');
 
 -- --------------------------------------------------------
 
@@ -283,10 +288,10 @@ CREATE TABLE `tentang_kami` (
 --
 
 INSERT INTO `tentang_kami` (`id_tentang_kami`, `judul_tentang_kami`, `isi_tentang_kami`, `gambar_tentang_kami`, `bahasa_tentang_kami`) VALUES
-(1, 'Vision and Mission', '[en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img/contents/contents-1.jpg', 'en'),
-(2, 'edited What We Do', '                <p>edited [en] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>              ', 'img/contents/main-carousel-1.jpg', 'en'),
-(3, 'Visi dan Misi', '[id] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img/contents/contents-1.jpg', 'id'),
-(4, 'Yang Kami Kerjakan', '<p>[id] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>', 'img/contents/main-carousel-1.jpg', 'id'),
+(1, 'Vision and Mission', '<h4><strong>VISION:</strong></h4><p>Building a solid foundation throughout Indonesia`s development.</p><p>&nbsp;</p><h4><strong>MISSION:</strong></h4><p>- Empower qualified and competent human resources to make our foundation number 1 in Indonesia.</p><p>- Building client satisfaction by working fast, precise, and providing the best.</p>', 'img/contents/contents-1.jpg', 'en'),
+(2, 'What We Do', '<p>PT. WEBE PILES begins with bore pile foundation work using the wash boring system, but continues to grow in line with technological developments. The construction of the foundation of buildings and bridges is not only limited to the wash boring system only. In order to achieve the level of effectiveness and good efficiency, the existing systems continue to grow rapidly. PT. WEBE PILES with competent experience expands on different foundation work systems such as dry boring and diaphragm wall.</p>', 'img/contents/main-carousel-1.jpg', 'en'),
+(3, 'Visi dan Misi', '<h4><strong>VISI:</strong></h4><p>Membangun Pondasi kokoh di seluruh pembangunan Indonesia.</p><p>&nbsp;</p><h4><strong>MISI:</strong></h4><p>-Memberdayakan SDM yang berkualitas dan berkompeten untuk menjadikan pondasi kami nomor 1 di Indonesia.</p><p>-Menciptakan kepuasan klien dengan kerja cepat, tepat dan memberikan yang terbaik.</p>', 'img/contents/contents-1.jpg', 'id'),
+(4, 'Yang Kami Kerjakan', '<p>Kegiatan usaha PT. WEBE PILES diawali dengan pekerjaan pondasi <i>bore pile </i>sistem<i> wash boring</i>, namun terus berkembang sejalan dengan perkembangan teknologi. Pembuatan pondasi bangunan dan jembatan tidak hanya sebatas dengan sistem <i>wash boring</i> saja. Demi mencapai tingkat keefektifan dan keefisienan yang baik maka sistem-sistem yang ada terus berkembang dengan pesat. PT. WEBE PILES dengan pengalaman yang kompeten memperluas sistem kerja pondasi yang berbeda seperti <i>dry boring</i> maupun <i>diaphragm wall</i>.</p>', 'img/contents/main-carousel-1.jpg', 'id'),
 (5, '[cn] Visi dan Misi', '[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', 'img/contents/contents-1.jpg', 'cn'),
 (6, '[cn] Yang Kami Kerjakan', '<p>[cn] Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>', 'img/contents/main-carousel-1.jpg', 'cn');
 
@@ -308,12 +313,12 @@ CREATE TABLE `testimonial` (
 --
 
 INSERT INTO `testimonial` (`id_testimonial`, `isi_testimonial`, `sumber_testimonial`, `bahasa_testimonial`) VALUES
-(1, '<p>edited [en] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'edited John Doe', 'en'),
-(2, '[id] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.', 'John Doe', 'id'),
-(3, '[cn] Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.', 'John Doe', 'cn'),
-(4, '<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'goy', 'en'),
-(5, '<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'goy', 'id'),
-(6, '<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'goy', 'cn');
+(1, '<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'John Doe', 'en'),
+(2, '<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'John Doe', 'id'),
+(3, '<p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam.</p>', 'John Doe', 'cn'),
+(4, '<p>His cu torquatos adolescens, vim possim ornatus reprimique no. Splendide constituto pri et, mei minim cotidieque in. In pri porro quando, ei interesset reprehendunt concludaturque est. Alia evertitur in his, ne sea scaevola assentior, erant iudicabit comprehensam per an.</p>', 'Jane Doe', 'en'),
+(5, '<p>His cu torquatos adolescens, vim possim ornatus reprimique no. Splendide constituto pri et, mei minim cotidieque in. In pri porro quando, ei interesset reprehendunt concludaturque est. Alia evertitur in his, ne sea scaevola assentior, erant iudicabit comprehensam per an.</p>', 'Jane Doe', 'id'),
+(6, '<p>His cu torquatos adolescens, vim possim ornatus reprimique no. Splendide constituto pri et, mei minim cotidieque in. In pri porro quando, ei interesset reprehendunt concludaturque est. Alia evertitur in his, ne sea scaevola assentior, erant iudicabit comprehensam per an.</p>', 'Jane Doe', 'cn');
 
 -- --------------------------------------------------------
 
@@ -439,7 +444,7 @@ ALTER TABLE `kontak`
 -- AUTO_INCREMENT for table `layanan`
 --
 ALTER TABLE `layanan`
-  MODIFY `id_layanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id_layanan` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `pekerjaan`
