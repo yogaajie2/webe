@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-md-6">
+            <div class="col-md-6 my-5">
                 <p>Start building your dream project with us. Have other questions? Please fill this form below and we will contact you shortly.</p>
                 <form action="pesan.php" method="POST">
                     <div class="form-group">
@@ -53,7 +53,7 @@
                     <button type="submit" class="btn btn-light">Send Message</button>
                 </form>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 my-5">
                 <div class="row">
 
                 <?php

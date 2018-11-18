@@ -3,7 +3,12 @@
 
 	$id = $_REQUEST['id'];
 	$nama = $_REQUEST['nama'];
-	$deskripsi = $_REQUEST['deskripsi'];
+	$lokasi = $_REQUEST['lokasi'];
+	$valuetipe = $_REQUEST['tipe'];
+	$client = $_REQUEST['client'];
+	$waktu = $_REQUEST['waktu'];
+	$durasi = $_REQUEST['durasi'];
+
 
     $proyek = "SELECT * FROM proyek WHERE id_proyek = '$id'";
     $hasil_proyek = mysqli_query($koneksi, $proyek);
@@ -63,7 +68,15 @@
 		}
 	}
 
-	$sql = "UPDATE `proyek` SET `nama_proyek`='$nama',`lokasi_proyek`='$deskripsi',`gambar_proyek`='$path' WHERE `id_proyek`='$id'";
+	if ($valuetipe == 1) {
+		$tipe = "Bor Pile";
+	} elseif ($valuetipe == 2) {
+		$tipe = "Dry Boring";
+	} else {
+		$tipe = "Pancang";
+	}
+
+	$sql = "UPDATE `proyek` SET `nama_proyek`='$nama',`lokasi_proyek`='$lokasi',`nama_client`='$client',`tipe_proyek`='$tipe',`waktu_proyek`='$waktu',`durasi_proyek`='$durasi',`gambar_proyek`='$path' WHERE `id_proyek`='$id'";
 
 	$result = mysqli_query($koneksi, $sql);
 

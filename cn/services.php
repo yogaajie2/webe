@@ -54,40 +54,7 @@
 
             <?php } ?>
 
-            <!--
-            <div class="col-md-4">
-                <img class="image-fluid" style="width: 100%; height: 230px;" src="img/services/spun-pile.jpg">
-                <h3 class="mt-3">Spun Pile</h3>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            <div class="col-md-4">
-                <img class="image-fluid" style="width: 100%; height: 230px;" src="img/services/square-pile.jpg">
-                <h3 class="mt-3">Square Pile</h3>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            -->
-
-        </div>
-
-        <!--
-        <div class="row mt-4">
-            <div class="col-md-4">
-                <img class="image-fluid" style="width: 100%; height: 230px;" src="img/services/pipe-pile.jpg">
-                <h3 class="mt-3">Pipe Pile</h3>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            <div class="col-md-4">
-                <img class="image-fluid" style="width: 100%; height: 230px;" src="img/services/bored-pile.jpg">
-                <h3 class="mt-3">Bored Pile</h3>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            <div class="col-md-4">
-                <img class="image-fluid" style="width: 100%; height: 230px;" src="img/services/barrette-pile.jpg">
-                <h3 class="mt-3">Barrette Pile</h3>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-        </div>
-        -->        
+        </div>    
     </div>
 
     <?php include ('footer.php') ?>

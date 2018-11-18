@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="row mt-5">
-            <div class="col-md-6">
+            <div class="col-md-6 my-5">
                 <p>Mulailah membangun proyek impian Anda bersama kami. Ada pertanyaan lain? Silahkan isi formulir di bawah ini dan kami akan segera menghubungi Anda.</p>
                 <form action="pesan.php" method="POST">
                     <div class="form-group">
@@ -53,7 +53,7 @@
                     <button type="submit" class="btn btn-light">Kirim Pesan</button>
                 </form>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 my-5">
                 <div class="row">
 
                 <?php

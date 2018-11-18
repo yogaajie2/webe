@@ -2,17 +2,14 @@
 	include '../koneksi.php';
 
 	$nama = $_REQUEST['nama'];
-	$lokasi = $_REQUEST['lokasi'];
-	$valuetipe = $_REQUEST['tipe'];
-	$client = $_REQUEST['client'];
-	$waktu = $_REQUEST['waktu'];
-	$durasi = $_REQUEST['durasi'];
+	$jabatan = $_REQUEST['jabatan'];
+	$tentang = $_REQUEST['bio'];
 	$bahasa = $_REQUEST['bahasa'];
 
 	//Upload image
-	$target_dir = "../../../img/projects/";
+	$target_dir = "../../../img/contents/";
 	$target_file = $target_dir . basename($_FILES["gambar"]["name"]);
-	$path = "img/projects/" . basename($_FILES["gambar"]["name"]);
+	$path = "img/contents/" . basename($_FILES["gambar"]["name"]);
 	$uploadOk = 1;
 	$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 	// Check if image file is a actual image or fake image
@@ -50,14 +47,6 @@
 	    }
 	}
 
-	if ($valuetipe == 1) {
-		$tipe = "Bor Pile";
-	} elseif ($valuetipe == 2) {
-		$tipe = "Dry Boring";
-	} else {
-		$tipe = "Pancang";
-	}
-
 	if ($bahasa == 1) {
 		$lang = "en";
 	} elseif ($bahasa == 2) {
@@ -66,9 +55,9 @@
 		$lang = "cn";
 	}
 
-	$sql = "INSERT INTO `proyek` (`tipe_proyek`,`gambar_proyek`,`nama_proyek`,`lokasi_proyek`,`nama_client`,`waktu_proyek`,`durasi_proyek`,`bahasa_proyek`) VALUES ('$tipe','$path','$nama','$lokasi','$client','$waktu','$durasi','$lang')";
+	$sql = "INSERT INTO `jajaran_direksi` (`nama_jajaran_direksi`,`jabatan_jajaran_direksi`,`tentang_jajaran_direksi`,`gambar_jajaran_direksi`,`bahasa_jajaran_direksi`) VALUES ('$nama','$jabatan','$tentang','$path','$lang')";
 
 	$result = mysqli_query($koneksi, $sql);
 
-	header("location:../../proyek.php");
+	header("location:../../tentang-kami.php");
 ?>

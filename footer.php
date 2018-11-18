@@ -3,12 +3,12 @@
 <footer class="container-fluid py-3 mt-5">
 	<div class="container">
 		<div class="row mt-5">
-			<div class="col-md-3">
+			<div class="col-md-3 my-3">
 				<p class="text-uppercase font-weight-bold">About Company</p>
 				<br>
 				<p>PT. WEBE PILES begins with bore pile foundation work using the wash boring system, but continues to grow in line with technological developments. PT. WEBE PILES with competent experience expands on different foundation work systems such as dry boring and diaphragm wall.</p>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 my-3">
 				<p class="text-uppercase font-weight-bold">Company</p>
 				<br>
 				<div class="row">
@@ -22,7 +22,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 my-3">
 				<p class="text-uppercase font-weight-bold">Contact</p>
 				<br>
 
@@ -47,7 +47,7 @@
 				<?php } ?>
 
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 my-3">
 				<p class="text-uppercase font-weight-bold">Office Hours</p>
 				<br>
 				<div class="row">

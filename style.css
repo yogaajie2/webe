@@ -45,8 +45,16 @@ a:hover {
     color: #fff;
 }
 
+.language {
+	background-color: #ff9933;
+}
+
+.language small a {
+	color: #fff;
+}
+
 .menu {
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .carousel-slide-1 {
@@ -126,8 +134,6 @@ a:hover {
     color: #fff;
 }
 
-
-
 footer {
 	background-color: #2b2b2b;
 }
@@ -136,3 +142,12 @@ footer p {
 	color: #fff;
 }
 
+@media only screen and (max-width: 767px) {
+	.top-slogan, .welcome-text {
+		font-size: xx-large;
+	}
+
+	.work-name {
+		font-size: medium;
+	}
+}

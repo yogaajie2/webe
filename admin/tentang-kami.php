@@ -166,6 +166,9 @@
           <div class="row">
             <div class="col d-flex justify-content-between">
               <h2>Jajaran Direksi</h2>
+              <a href="tambah/tambah-jajaran-direksi.php" class="btn btn-link">
+                <h3 style="color: #ff9933; font-weight: bold;">Tambah Data</h3>
+              </a>
             </div>
           </div>
           <br>
@@ -220,6 +223,7 @@
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_jajaran_direksi_en['gambar_jajaran_direksi']; ?>"></td>
                     <td class="text-right align-middle">
                       <a href="ubah/ubah-jajaran-direksi.php?id=<?php echo $row_jajaran_direksi_en['id_jajaran_direksi']; ?>" class="btn btn-link">Ubah</a>
+                      <a href="fungsi/delete/delete-jajaran-direksi.php?id=<?php echo $row_jajaran_direksi_en['id_jajaran_direksi']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
 
@@ -264,6 +268,7 @@
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_jajaran_direksi_id['gambar_jajaran_direksi']; ?>"></td>
                     <td class="text-right align-middle">
                       <a href="ubah/ubah-jajaran-direksi.php?id=<?php echo $row_jajaran_direksi_id['id_jajaran_direksi']; ?>" class="btn btn-link">Ubah</a>
+                      <a href="fungsi/delete/delete-jajaran-direksi.php?id=<?php echo $row_jajaran_direksi_id['id_jajaran_direksi']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
 
@@ -308,6 +313,7 @@
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_jajaran_direksi_cn['gambar_jajaran_direksi']; ?>"></td>
                     <td class="text-right align-middle">
                       <a href="ubah/ubah-jajaran-direksi.php?id=<?php echo $row_jajaran_direksi_cn['id_jajaran_direksi']; ?>" class="btn btn-link">Ubah</a>
+                      <a href="fungsi/delete/delete-jajaran-direksi.php?id=<?php echo $row_jajaran_direksi_cn['id_jajaran_direksi']; ?>" class="btn btn-link">Hapus</a>
                     </td>
                   </tr>
 

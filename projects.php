@@ -44,8 +44,10 @@
                     <img class="img-fluid" style="width: 100%; height: 240px;" src="<?php echo $row_proyek['gambar_proyek']; ?>">
                     <div class="container position-absolute project-overlay p-0">
                         <div class="position-absolute project-overlay-text">
-                            <h3><?php echo $row_proyek['nama_proyek']; ?></h3>
-                            <p><?php echo $row_proyek['lokasi_proyek']; ?></p>
+                            <a style="color: white;" href="project-details.php?id=<?php echo $row_proyek['id_proyek']; ?>">
+                                <h3><?php echo $row_proyek['nama_proyek']; ?></h3>
+                                <p><?php echo $row_proyek['lokasi_proyek']; ?></p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -61,42 +63,7 @@
 
             <?php } ?>
 
-            <!--
-            <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-2.jpeg">
-            </div>
-            <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-3.jpeg"> 
-            </div>
-            -->
-
         </div>
-
-        <!--
-        <div class="row">
-            <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-4.jpeg">
-            </div>
-            <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-5.jpeg">
-            </div>
-            <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-6.jpeg">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-7.jpeg">
-            </div>
-            <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-8.jpeg">
-            </div>
-            <div class="col-md-4 py-5">
-                <img class="img-fluid" style="width: 100%; height: 240px;" src="img/projects/projects-9.jpg">
-            </div>
-        </div>
-        -->
-
     </div>
 
     <?php include ('footer.php') ?>

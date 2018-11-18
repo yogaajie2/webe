@@ -38,8 +38,28 @@
               <input type="text" class="form-control" name="nama" id="nama" value="<?php echo $row['nama_proyek']; ?>">
             </div>
             <div class="form-group">
-              <label for="deskripsi">lokasi proyek</label>
-              <input type="text" class="form-control" name="deskripsi" id="deskripsi" value="<?php echo $row['lokasi_proyek']; ?>">
+              <label for="lokasi">lokasi proyek</label>
+              <input type="text" class="form-control" name="lokasi" id="lokasi" value="<?php echo $row['lokasi_proyek']; ?>">
+            </div>
+            <div class="form-group">
+              <label for="tipe">Tipe Proyek</label>
+              <select class="form-control" id="tipe" name="tipe">
+                <option value="1">Bor Pile</option>
+                <option value="2">Dry Boring</option>
+                <option value="3">Pancang</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="client">Nama client</label>
+              <input type="text" class="form-control" name="client" id="client" value="<?php echo $row['nama_client']; ?>">
+            </div>
+            <div class="form-group">
+              <label for="waktu">Waktu proyek</label>
+              <input type="text" class="form-control" name="waktu" id="waktu" value="<?php echo $row['waktu_proyek']; ?>">
+            </div>
+            <div class="form-group">
+              <label for="durasi">Durasi proyek</label>
+              <input type="text" class="form-control" name="durasi" id="durasi" value="<?php echo $row['durasi_proyek']; ?>">
             </div>
             <div class="form-group">
               <label for="gambar">Gambar proyek</label>

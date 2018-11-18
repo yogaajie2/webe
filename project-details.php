@@ -1,13 +1,25 @@
 <!doctype html>
 <html lang="en">
 
-  <?php include ('fungsi/koneksi.php'); ?>
+    <?php 
+      include 'fungsi/koneksi.php';
+
+      $sql = "SELECT * FROM proyek WHERE id_proyek = $_GET[id]";
+      $result = mysqli_query($koneksi, $sql);
+      if (!$result) {
+        echo "ERROR";
+      }
+
+      $i = 0;
+    ?>
 
   <head>
 
     <?php include ('head.html'); ?>
 
-    <title>About Us | Webe Piles</title>
+    <?php while ($row = mysqli_fetch_array($result, MYSQLI_ASSOC)) { ?>
+
+    <title><?php echo $row['nama_proyek']; ?></title>
   </head>
 
   <body>
@@ -22,31 +34,44 @@
     <div class="container">
         <div class="row text-center">
             <div class="col">
-                <h1 class="mt-5" style="text-transform: uppercase;">About Us</h1>
+                <h1 class="mt-5" style="text-transform: uppercase;"><?php echo $row['nama_proyek']; ?></h1>
                 <small>
-                    <a href="home.php">Home</a> > About Us
+                    <a href="home.php">Home</a> > <a href="projects.php">Projects</a> > <?php echo $row['nama_proyek']; ?>
                 </small>
             </div>
         </div>
+        <h1 class="mt-5" style="text-transform: uppercase;">Project Details</h1>
         <div class="row mt-5">
-
-            <?php
-                $tentang_kami = "SELECT * FROM tentang_kami WHERE bahasa_tentang_kami = 'en'";
-                $hasil_tentang_kami = mysqli_query($koneksi, $tentang_kami);
-
-                while ($row_tentang_kami = mysqli_fetch_array($hasil_tentang_kami, MYSQLI_ASSOC)) {
-            ?>
-
-            <div class="col-md-6">
-                <img class="img-fluid" style="width: 100%; height: 320px;" src="<?php echo $row_tentang_kami['gambar_tentang_kami']; ?>">
-                <h3 class="mt-3" style="text-transform: uppercase;"><?php echo $row_tentang_kami['judul_tentang_kami']; ?></h3>
-                <p><?php echo $row_tentang_kami['isi_tentang_kami']; ?></p>
-            </div>
-
-            <?php } ?>
-
+            <table class="table table-striped">
+                <tbody>
+                    <tr>
+                        <td>Nama Proyek</td>
+                        <td><?php echo $row['nama_proyek']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Tipe Proyek</td>
+                        <td><?php echo $row['tipe_proyek']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Lokasi Proyek</td>
+                        <td><?php echo $row['lokasi_proyek']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Nama Client</td>
+                        <td><?php echo $row['nama_client']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Waktu Proyek</td>
+                        <td><?php echo $row['waktu_proyek']; ?></td>
+                    </tr>
+                    <tr>
+                        <td>Durasi Proyek</td>
+                        <td><?php echo $row['durasi_proyek']; ?></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <h1 class="mt-5" style="text-transform: uppercase;">Board of Directors</h1>
+        <h1 class="mt-5" style="text-transform: uppercase;">Project Gallery</h1>
         <div class="row my-3">
 
             <?php
@@ -78,6 +103,8 @@
     </div>
 
     <?php include ('footer.php') ?>
+
+    <?php } ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

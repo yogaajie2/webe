@@ -1,9 +1,11 @@
 <!doctype html>
 <html lang="en" class="h-100">
+<head>
 
-  <!-- <?php include ('fungsi/koneksi.php'); ?> -->
   <?php include ('head.html'); ?>
 
+  <title>PT. WEBE PILES | Welcome</title>
+</head>
   <body class="h-100">
     <div class="container-fluid h-100 landing-page">
         <div class="container h-25 d-flex align-items-center justify-content-center">
@@ -13,10 +15,10 @@
                 </div>
             </div>
         </div>
-        <div class="container h-25 d-flex align-items-center justify-content-center">
-            <div class="row mx-0">
-                <div class="col-4">
-                    <div class="container position-relative d-inline-block overlay-container p-0">
+        <div class="container h-50 d-flex align-items-center justify-content-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="container position-relative d-inline-block overlay-container text-center">
                         <span class="display-1 flag-icon flag-icon-us"></span>
                         <a href="home.php">
                             <div class="container position-absolute language-overlay p-0">
@@ -27,8 +29,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="container position-relative d-inline-block overlay-container p-0">
+                <div class="col-md-4">
+                    <div class="container position-relative d-inline-block overlay-container text-center">
                         <span class="display-1 flag-icon flag-icon-id"></span>
                         <a href="id/home.php">
                             <div class="container position-absolute language-overlay p-0">
@@ -39,13 +41,13 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-4">
-                    <div class="container position-relative d-inline-block overlay-container p-0">
+                <div class="col-md-4">
+                    <div class="container position-relative d-inline-block overlay-container text-center">
                         <span class="display-1 flag-icon flag-icon-cn"></span>
-                        <a href="cn/home.php">
+                        <a href="#">
                             <div class="container position-absolute language-overlay p-0">
                                 <div class="position-absolute language-overlay-text">
-                                    <h3>Chinese</h3>
+                                    <h3>Under Construction</h3>
                                 </div>
                             </div>
                         </a>
@@ -53,7 +55,7 @@
                 </div>
             </div>
         </div>
-        <div class="container h-25 d-flex align-items-center justify-content-center">   
+        <div class="container h-25 d-flex align-items-center justify-content-center text-center">
             <div class="row">
                 <div class="col">
                     <h1 class="welcome-text">Please choose your language.</h1>

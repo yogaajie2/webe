@@ -45,14 +45,6 @@
 
             <?php } ?>
 
-            <!--
-            <div class="col-md-6">
-                <img class="img-fluid" style="width: 100%; height: 320px;" src="img/contents/contents-2.jpg">
-                <h3 class="mt-3" style="text-transform: uppercase;">What We Do</h3>
-                <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-            -->
         </div>
         <h1 class="mt-5" style="text-transform: uppercase;">Board of Directors</h1>
         <div class="row mt-3">
@@ -73,20 +65,6 @@
 
             <?php } ?>
 
-            <!--
-            <div class="col-md-4">
-                <img class="img-fluid" src="img/contents/profile.png">
-                <h4 class="mt-3">Hasan Agus</h4>
-                <p style="font-style: italic;">Vice Director</p>
-                <p>Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
-            </div>
-            <div class="col-md-4">
-                <img class="img-fluid" src="img/contents/profile.png">
-                <h4 class="mt-3">Priscilla Elsa</h4>
-                <p style="font-style: italic;">Secretary</p>
-                <p>Donec a felis sed ligula aliquet sollicitudin a in elit. Nunc at commodo erat, fringilla egestas tortor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
-            </div>
-            -->
         </div>
     </div>
 

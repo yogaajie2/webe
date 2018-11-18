@@ -59,6 +59,7 @@
                     <th class="align-middle">Nama proyek</th>
                     <th class="align-middle">Lokasi proyek</th>
                     <th class="align-middle">Gambar proyek</th>
+                    <th class="align-middle">Detail proyek</th>
                     <th class="align-middle">Opsi</th>
                   </tr>
                 </thead>
@@ -71,6 +72,12 @@
                     <td class="align-middle"><?php echo $row_proyek_en['nama_proyek']; ?></td>
                     <td class="align-middle"><?php echo $row_proyek_en['lokasi_proyek']; ?></td>
                     <td class="align-middle"><img style="width: 320px; height: 240px;" src="../<?php echo $row_proyek_en['gambar_proyek']; ?>"></td>
+                    <td class="align-middle">
+                      Tipe: <?php echo $row_proyek_en['tipe_proyek']; ?><br>
+                      Client: <?php echo $row_proyek_en['nama_client']; ?><br>
+                      Waktu: <?php echo $row_proyek_en['waktu_proyek']; ?><br>
+                      Durasi: <?php echo $row_proyek_en['durasi_proyek']; ?>
+                    </td>
                     <td class="align-middle">
                       <a href="ubah/ubah-proyek.php?id=<?php echo $row_proyek_en['id_proyek']; ?>" class="btn btn-link">Ubah</a>
                       <a href="fungsi/delete/delete-proyek.php?id=<?php echo $row_proyek_en['id_proyek']; ?>" class="btn btn-link">Hapus</a>

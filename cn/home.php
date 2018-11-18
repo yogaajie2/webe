@@ -26,7 +26,7 @@
 						<h1 class="display-3 text-uppercase mx-auto top-slogan" style="text-align: center;">Membangun Masa Depan</h1>
 					</div>
 					<div class="container h-50 d-flex align-items-center">
-						<a class="btn btn-lg jumbotron-button mx-auto" href="proyek.php">Lihat Pekerjaan Kami >></a>
+						<a class="btn btn-lg jumbotron-button mx-auto" href="projects.php">Lihat Pekerjaan Kami >></a>
 					</div>
 		    	</div>
 			    <div class="carousel-item carousel-slide-2">
@@ -49,12 +49,6 @@
 		</div>
     </div>
 
-    <!-- <div class="jumbotron jumbotron-fluid top-jumbotron">
-    	<div class="container h-100 d-flex align-items-center">
-			<h1 class="display-3 mx-auto top-slogan" style="text-align: center;">MEMBANGUN MASA DEPAN</h1>
-		</div>
-    </div> -->
-
 	<div class="container">
 		<div class="row my-5">
 
@@ -72,20 +66,7 @@
 			</div>
 
 			<?php } ?>
-			<!--
-			<div class="col-md-4">
-			  <img class="img-fluid main-features mb-3" src="../img/features/feature-2.jpeg">
-			    <h4>Fitur 2</h4>
-			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
-			    <a href="#">Baca Lebih</a>	
-			</div>
-			<div class="col-md-4">
-			  <img class="img-fluid main-features mb-3" src="../img/features/feature-3.jpeg">
-			    <h4>Fitur 3</h4>
-			    <p>Lorem ipsum dolor sit amet, scripta copiosae ut eam, ad errem neglegentur nec. At eam noluisse corrumpit, postea animal intellegam et nam. Ne eum stet melius, recteque persecuti cum ex.</p>
-			    <a href="#">Baca Lebih</a>	
-			</div>
-			-->
+
 		</div>
 	</div>
 
@@ -115,16 +96,8 @@
 			?>
 
 			<div class="col-4 d-flex align-items-center justify-content-center">
-				<h4><?php echo $row_pekerjaan['nama_pekerjaan']; ?></h4>
+				<h4 class="work-name"><?php echo $row_pekerjaan['nama_pekerjaan']; ?></h4>
 			</div>
-			<!--
-			<div class="col-4 d-flex align-items-center justify-content-center">
-				<h4>Pekerjaan 2</h4>
-			</div>
-			<div class="col-4 d-flex align-items-center justify-content-center">
-				<h4>Pekerjaan 3</h4>
-			</div>
-			-->
 
 			<?php } ?>
 
@@ -171,20 +144,9 @@
 
 				<?php } ?>
 
-			<!--
-				<div class="col-md-3">
-					<img class="img-fluid projects" src="../img/projects/projects-2.jpeg">
-				</div>
-				<div class="col-md-3">
-					<img class="img-fluid projects" src="../img/projects/projects-3.jpeg">
-				</div>
-				<div class="col-md-3">
-					<img class="img-fluid projects" src="../img/projects/projects-4.jpeg">
-				</div>
-			-->
 			</div>
 			<div class="row my-5 justify-content-center">
-				<a class="btn btn-lg jumbotron-button" href="proyek.php">Lihat Semua Proyek</a>
+				<a class="btn btn-lg jumbotron-button" href="projects.php">Lihat Semua Proyek</a>
 			</div>
 		</div>
 	</div>
@@ -219,26 +181,8 @@
 						        ?>
 
 						    	<?php } ?>
-								<!--
-								<td>
-									<h3>Client 2</h3>
-								</td>
-								<td>
-									<h3>Client 3</h3>
-								</td>
+								
 							</tr>
-							<tr>
-								<td>
-									<h3>Client 4</h3>
-								</td>
-								<td>
-									<h3>Client 5</h3>
-								</td>
-								<td>
-									<h3>Client 6</h3>
-								</td>
-							</tr>
-							-->
 						</table>
 					</div>
 				</div>

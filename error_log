@@ -1,0 +1,58 @@
+[09-Jun-2018 16:50:09 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/webepiles/public_html/fungsi/koneksi.php on line 3
+[09-Jun-2018 16:50:09 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/fungsi/koneksi.php on line 6
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/webepiles/public_html/fungsi/koneksi.php on line 3
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/fungsi/koneksi.php on line 6
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 64
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 66
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 113
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 115
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 156
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 158
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 204
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 208
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 252
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 254
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/webepiles/public_html/fungsi/koneksi.php on line 3
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/fungsi/koneksi.php on line 6
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/footer.php on line 31
+[09-Jun-2018 16:50:27 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/footer.php on line 33
+[09-Jun-2018 16:51:34 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/webepiles/public_html/fungsi/koneksi.php on line 3
+[09-Jun-2018 16:51:34 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/fungsi/koneksi.php on line 6
+[09-Jun-2018 16:51:34 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/contact.php on line 61
+[09-Jun-2018 16:51:34 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/contact.php on line 65
+[09-Jun-2018 16:51:34 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/webepiles/public_html/fungsi/koneksi.php on line 3
+[09-Jun-2018 16:51:34 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/fungsi/koneksi.php on line 6
+[09-Jun-2018 16:51:34 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/footer.php on line 31
+[09-Jun-2018 16:51:34 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/footer.php on line 33
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/webepiles/public_html/fungsi/koneksi.php on line 3
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/fungsi/koneksi.php on line 6
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 64
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 66
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 113
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 115
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 156
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 158
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 204
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 208
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 252
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 254
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/webepiles/public_html/fungsi/koneksi.php on line 3
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/fungsi/koneksi.php on line 6
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/footer.php on line 31
+[09-Jun-2018 16:51:41 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/footer.php on line 33
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/webepiles/public_html/fungsi/koneksi.php on line 3
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/fungsi/koneksi.php on line 6
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 64
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 66
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 113
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 115
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 156
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 158
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 204
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 208
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/home.php on line 252
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/home.php on line 254
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/webepiles/public_html/fungsi/koneksi.php on line 3
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_select_db() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/fungsi/koneksi.php on line 6
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/webepiles/public_html/footer.php on line 31
+[09-Jun-2018 17:12:10 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/webepiles/public_html/footer.php on line 33
