@@ -52,10 +52,13 @@
 
 	if ($valuetipe == 1) {
 		$tipe = "Bor Pile";
+		$filter = "borpile";
 	} elseif ($valuetipe == 2) {
 		$tipe = "Dry Boring";
+		$filter = "dryboring";
 	} else {
 		$tipe = "Pancang";
+		$filter = "pancang";
 	}
 
 	if ($bahasa == 1) {
@@ -66,7 +69,7 @@
 		$lang = "cn";
 	}
 
-	$sql = "INSERT INTO `proyek` (`tipe_proyek`,`gambar_proyek`,`nama_proyek`,`lokasi_proyek`,`nama_client`,`waktu_proyek`,`durasi_proyek`,`bahasa_proyek`) VALUES ('$tipe','$path','$nama','$lokasi','$client','$waktu','$durasi','$lang')";
+	$sql = "INSERT INTO `proyek` (`tipe_proyek`,`filter_proyek`,`gambar_proyek`,`nama_proyek`,`lokasi_proyek`,`nama_client`,`waktu_proyek`,`durasi_proyek`,`bahasa_proyek`) VALUES ('$tipe','$filter','$path','$nama','$lokasi','$client','$waktu','$durasi','$lang')";
 
 	$result = mysqli_query($koneksi, $sql);
 

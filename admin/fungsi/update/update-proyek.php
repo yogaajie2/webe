@@ -70,13 +70,16 @@
 
 	if ($valuetipe == 1) {
 		$tipe = "Bor Pile";
+		$filter = "borpile";
 	} elseif ($valuetipe == 2) {
 		$tipe = "Dry Boring";
+		$filter = "dryboring";
 	} else {
 		$tipe = "Pancang";
+		$filter = "pancang";
 	}
 
-	$sql = "UPDATE `proyek` SET `nama_proyek`='$nama',`lokasi_proyek`='$lokasi',`nama_client`='$client',`tipe_proyek`='$tipe',`waktu_proyek`='$waktu',`durasi_proyek`='$durasi',`gambar_proyek`='$path' WHERE `id_proyek`='$id'";
+	$sql = "UPDATE `proyek` SET `nama_proyek`='$nama',`lokasi_proyek`='$lokasi',`nama_client`='$client',`tipe_proyek`='$tipe',`filter_proyek`='$filter',`waktu_proyek`='$waktu',`durasi_proyek`='$durasi',`gambar_proyek`='$path' WHERE `id_proyek`='$id'";
 
 	$result = mysqli_query($koneksi, $sql);
 
