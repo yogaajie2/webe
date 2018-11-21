@@ -71,35 +71,6 @@
                 </tbody>
             </table>
         </div>
-        <h1 class="mt-5" style="text-transform: uppercase;">Project Gallery</h1>
-        <div class="row my-3">
-
-            <?php
-                $jajaran_direksi = "SELECT * FROM jajaran_direksi WHERE bahasa_jajaran_direksi = 'en'";
-                $hasil_jajaran_direksi = mysqli_query($koneksi, $jajaran_direksi);
-
-                $i = 0;
-
-                while ($row_jajaran_direksi = mysqli_fetch_array($hasil_jajaran_direksi, MYSQLI_ASSOC)) {
-            ?>
-
-            <div class="col-md-4">
-                <img class="img-fluid" src="<?php echo $row_jajaran_direksi['gambar_jajaran_direksi']; ?>">
-                <h4 class="mt-3"><?php echo $row_jajaran_direksi['nama_jajaran_direksi']; ?></h4>
-                <p style="font-style: italic;"><?php echo $row_jajaran_direksi['jabatan_jajaran_direksi']; ?></p>
-                <p><?php echo $row_jajaran_direksi['tentang_jajaran_direksi']; ?></p>
-            </div>
-
-            <?php 
-            	$i++;
-            	if ($i % 3 == 0) {
-            		echo '</div><div class="row my-3">';
-             	}
-            ?>
-
-            <?php } ?>
-
-        </div>
     </div>
 
     <?php include ('footer.php') ?>
