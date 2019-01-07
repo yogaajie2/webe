@@ -14,7 +14,7 @@
   	<div class="container-fluid sticky-top menu">
   		<div class="container">
 
-    		<?php include ('navbar.html') ?>
+    		<?php include ('navbar.php') ?>
     	
     	</div>
   	</div>
